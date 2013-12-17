@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="assets/libraries/chosen/chosen.css" type="text/css">
+  <link rel="stylesheet" href="assets/libraries/bootstrap-fileupload/bootstrap-fileupload.css" type="text/css">
+  <link rel="stylesheet" href="assets/libraries/jquery-ui-1.10.2.custom/css/ui-lightness/jquery-ui-1.10.2.custom.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+
+</head>
+
+<body class="">
+
+<div id="wrapper-outer">
+
+  <div id="wrapper">
+
+    <div id="wrapper-inner">
+
+      <!-- BREADCRUMB -->
+      <div class="breadcrumb-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+              <ul class="breadcrumb pull-left">
+                <li><a href="index.html">Home</a></li>
+              </ul>
+              <div class="account pull-right">
+                <ul class="nav nav-pills">
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="registration.html">Registration</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HEADER -->
+      <header id="header-wrapper">
+        <div class="container">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="row">
+                <div class="logo-wrapper col-md-6 col-xs-12">
+                  <a href="#nav" class="visible-xs" id="btn-nav">Toggle navigation</a>
+                  <div class="logo">
+                    <a href="index.html" title="Home">
+                      <img src="assets/img/logo.png" alt="Home">
+                    </a>
+                  </div>
+                  <div class="site-slogan visible-lg">
+                    <span>Bureaux Conseils <br>Lamock sprl</span>
+                  </div>
+                </div>
+                <div class="info-wrapper col-md-4 col-xs-12">
+                  <div class="info-email">
+                    <a href="mailto:info@bureaux-lamock.be">info@bureaux-lamock.be</a>
+                  </div>
+                  <div class="info-phone">
+                    <span>+32 (0)61 53 44 62</span>
+                  </div>
+                </div>
+                <div class="extra-wrapper col-md-2 hidden-xs">
+                  <a class="btn btn-primary btn-large arrow-right" href="">Assurance</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- NAVIGATION -->
+      <navigation id="navigation-wrapper">
+        <div class="container">
+          <div class="navigation">
+
+              <ul class="nav">
+                <li class="menuparent">
+                  <span class="menuparent nolink">Homepage</span>
+                  <ul>
+                    <li><a href="index-slider.html">Homepage with slider</a></li>
+                    <li><a href="index.html">Homepage with map</a></li>
+                    <li><a href="index-simple.html">Simple homepage</a></li>
+                    <li><a href="index-carousel.html">Homepage with carousel</a></li>
+                  </ul>
+                </li>
+                <li class="menuparent">
+                  <span class="menuparent nolink">Listing</span>
+                  <ul>
+                    <li><a href="listing-grid.html">Listing grid</a></li>
+                    <li><a href="listing-grid-filter.html">Listing grid with filter</a></li>
+                    <li><a href="listing-rows.html">Listing rows</a></li>
+                    <li><a href="listing-rows-filter.html">Listing rows with filter</a></li>
+                  </ul>
+                </li>
+                <li class="menuparent">
+                  <span class="menuparent nolink">Pages</span>
+                  <ul>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="our-agents.html">Our agents</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="shortcodes.html">Shortcodes</a></li>
+                    <li class="menuparent">
+                      <span class="menuparent nolink">Another level</span>
+                      <ul>
+                        <li><a href="contact-us.html">Contact us</a></li>
+                        <li><a href="grid-system.html">Grid system</a></li>
+                        <li><a href="typography.html">Typography</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="404.html">404 page</a></li>
+                  </ul>
+                </li>
+                <li class="menuparent">
+                  <span class="menuparent nolink">Pricing</span>
+                  <ul>
+                    <li><a href="pricing-boxed.html">Boxed pricing</a></li>
+                    <li><a href="pricing-multiple.html">Multiple pricing</a></li>
+                    <li><a href="pricing-simple.html">Simple Pricing</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+              </ul>
+              <form method="get" class="site-search" action="?">
+                <div class="input-append">
+                  <input title="Enter the terms you wish to search for." class="search-query span2 form-text" placeholder="Search" type="text" name="">
+                  <button type="submit" class="btn"><i class="icon-search"></i></button>
+                </div>
+              </form>
+
+          </div>
+        </div>
+      </navigation>
+
+      <!-- CONTENT -->
+      <div id="content">
+
+        <div class="bottom-wrapper">
+          <div class="bottom container">
+            <div class="bottom-inner row">
+              <div class="item col-md-4">
+                <div class="address decoration"></div>
+                <h2><a>Particulier</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan dui ac nunc imperdiet rhoncus. Aenean vitae imperdiet lectus</p>
+                <a href="#" class="btn btn-primary">Plus d'info</a>
+              </div>
+              <div class="item col-md-4">
+                <div class="gps decoration"></div>
+                <h2><a>Professionnel</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan dui ac nunc imperdiet rhoncus. Aenean vitae imperdiet lectus</p>
+                <a href="#" class="btn btn-primary">Plus d'info</a>
+              </div>
+              <div class="item col-md-4">
+                <div class="key decoration"></div>
+                <h2><a>Entreprises</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan dui ac nunc imperdiet rhoncus. Aenean vitae imperdiet lectus</p>
+                <a href="#" class="btn btn-primary">Plus d'info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom-wrapper">
+          <div class="bottom container">
+            <div class="features">
+              <h2 class="page-header">Theme features</h2>
+              <div class="row">
+                <div class="item span4">
+                  <div class="row">
+                    <div class="icon span1">
+                      <img src="assets/img/icons/features-seo.png" alt="">
+                    </div>
+                    <div class="text span3">
+                      <h3>SEO Ready</h3>
+                      <p>Realia is ready to put your website on higher ranks. Every line of code was developed with SEO principles in mind.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item span4">
+                  <div class="row">
+                    <div class="icon span1">
+                      <img src="assets/img/icons/features-retina.png" alt="">
+                    </div>
+                    <div class="text span3">
+                      <h3>Retina Ready</h3>
+                      <p>Realia looks great even on Retina and high-resoultion displays. Every graphic element is sharp and clean. No blurry images anymore!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item span4">
+                  <div class="row">
+                    <div class="icon span1">
+                      <img src="assets/img/icons/features-custom-widgets.png" alt="">
+                    </div>
+                    <div class="text span3">
+                      <h3>Custom Widgets</h3>
+                      <p>Realia provides custom developed widgets to fulfil requirements of good real estate application.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item span4">
+                  <div class="row">
+                    <div class="icon span1">
+                      <img src="assets/img/icons/features-bootstrap.png" alt="">
+                    </div>
+                    <div class="text span3">
+                      <h3>Prepared for Bootstrap</h3>
+                      <p>Developer friendly code based on Bootstrap and SASS makes your own customizations really easy.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item span4">
+                  <div class="row">
+                    <div class="icon span1">
+                      <img src="assets/img/icons/features-pencil.png" alt="">
+                    </div>
+                    <div class="text span3">
+                      <h3>Frontend Submission</h3>
+                      <p>Make the portal solution from your real estate by providing property submission on homepage.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item span4">
+                  <div class="row">
+                    <div class="icon span1">
+                      <img src="assets/img/icons/features-responsive.png" alt="">
+                    </div>
+                    <div class="text span3">
+                      <h3>Responsive</h3>
+                      <p>Realia is ready to put your website on higher ranks. Every line of code was developed with SEO principles in mind.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer id="footer-wrapper">
+
+      <div id="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="widget col-sm-4">
+              <div class="title">
+                <h2>Contact us</h2>
+              </div>
+              <div class="content">
+                <table class="contact">
+                  <tbody>
+                  <tr>
+                    <th class="address">Address:</th>
+                    <td>1900 Pico Blvd<br>Santa Monica, CA 90405<br>United States<br></td>
+                  </tr>
+                  <tr>
+                    <th class="phone">Phone:</th>
+                    <td>+48 123 456 789</td>
+                  </tr>
+                  <tr>
+                    <th class="email">E-mail:</th>
+                    <td><a href="mailto:info@yourcompany.com">info@example.com</a></td>
+                  </tr>
+                  <tr>
+                    <th class="skype">Skype:</th>
+                    <td>your.company</td>
+                  </tr>
+                  <tr>
+                    <th class="gps">GPS:</th>
+                    <td>34.016811<br>-118.469009</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="widget col-sm-4">
+              <div class="title">
+                <h2>Heures d'ouverture</h2>
+              </div>
+              <div class="content">
+                <table class="contact">
+                  <tbody>
+                  <tr>
+                    <th class="address">Address:</th>
+                    <td>1900 Pico Blvd<br>Santa Monica, CA 90405<br>United States<br></td>
+                  </tr>
+                  <tr>
+                    <th class="phone">Phone:</th>
+                    <td>+48 123 456 789</td>
+                  </tr>
+                  <tr>
+                    <th class="email">E-mail:</th>
+                    <td><a href="mailto:info@yourcompany.com">info@example.com</a></td>
+                  </tr>
+                  <tr>
+                    <th class="skype">Skype:</th>
+                    <td>your.company</td>
+                  </tr>
+                  <tr>
+                    <th class="gps">GPS:</th>
+                    <td>34.016811<br>-118.469009</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="widget col-sm-4">
+              <div class="title">
+                <h2 class="block-title">Useful links</h2>
+              </div>
+              <div class="content">
+                <ul class="menu nav">
+                  <li class="first leaf"><a href="404.html">404 page</a></li>
+                  <li class="leaf"><a href="about-us.html">About us</a></li>
+                  <li class="leaf"><a href="contact-us.html">Contact us</a></li>
+                  <li class="leaf"><a href="faq.html">FAQ</a></li>
+                  <li class="leaf"><a href="grid-system.html">Grid system</a></li>
+                  <li class="leaf"><a href="our-agents.html">Our agents</a></li>
+                  <li class="last leaf"><a href="typography.html">Typography</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer" class="footer container">
+        <div id="footer-inner">
+          <div class="row">
+            <div class="col-sm-6 copyright">
+              <p>Copyright 2013 by <a href="http://www.mariqueCalcus">MariqueCalcus</a>. All rights reserved.</p>
+            </div>
+            <div class="col-sm-6 social">
+              <div class="content">
+                <ul class="menu nav">
+                  <li class="first leaf"><a href="http://www.facebook.com" class="facebook">Facebook</a></li>
+                  <li class="leaf"><a href="http://flickr.net" class="flickr">Flickr</a></li>
+                  <li class="leaf"><a href="http://plus.google.com" class="google">Google+</a></li>
+                  <li class="leaf"><a href="http://www.linkedin.com" class="linkedin">LinkedIn</a></li>
+                  <li class="leaf"><a href="http://www.twitter.com" class="twitter">Twitter</a></li>
+                  <li class="last leaf"><a href="http://www.vimeo.com" class="vimeo">Vimeo</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+  </div>
+
+</div>
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=true"></script>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/jquery.ezmark.js"></script>
+<script type="text/javascript" src="assets/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="assets/js/retina.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/carousel.js"></script>
+<script type="text/javascript" src="assets/js/gmap3.min.js"></script>
+<script type="text/javascript" src="assets/js/gmap3.infobox.min.js"></script>
+<script type="text/javascript" src="assets/libraries/jquery-ui-1.10.2.custom/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="assets/libraries/chosen/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="assets/libraries/iosslider/_src/jquery.iosslider.min.js"></script>
+<script type="text/javascript" src="assets/libraries/bootstrap-fileupload/bootstrap-fileupload.js"></script>
+<script type="text/javascript" src="assets/js/realia.js"></script>
+
+</body>
+</html>
