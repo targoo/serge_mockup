@@ -8,31 +8,19 @@
 @import 'compass';
 
 @import 'helpers/mixins';
-@import 'helpers/forms';
-@import 'helpers/elements';
+//@import 'helpers/forms';
+//@import 'helpers/elements';
 @import 'helpers/header';
-@import 'helpers/breadcrumb';
-//@import 'helpers/ezmark';
-//@import 'helpers/palette';
-@import 'helpers/not_found';
-//@import 'helpers/list_your_property';
-@import 'helpers/slider';
+//@import 'helpers/breadcrumb';
+//@import 'helpers/not_found';
+//@import 'helpers/slider';
 @import 'helpers/navigation';
-//@import 'helpers/propertydetail';
-//@import 'helpers/pricing';
-//@import 'helpers/login_register';
-//@import 'helpers/agents';
-//@import 'helpers/aboutus';
-//@import 'helpers/partners';
-@import 'helpers/carousel'; 
-@import 'helpers/map';
-//@import 'helpers/features';
-@import 'helpers/bottom';
-@import 'helpers/footer';
-
+//@import 'helpers/carousel';
+//@import 'helpers/map';
+//@import 'helpers/bottom';
+//@import 'helpers/footer';
 
 $font-family-default: 'Open Sans', 'Arial', sans-serif;
-
 
 .btn { -webkit-font-smoothing: antialiased; @include background-image(none); @include border-radius(0px); @include box-shadow(none); @include text-shadow(none); border: 0px; padding: 7px 15px 7px 15px; font-weight: normal; 
   &.btn-primary { @include transition(background-color .2s ease-in); background-color: $blue;
@@ -51,22 +39,33 @@ $font-family-default: 'Open Sans', 'Arial', sans-serif;
 html { height: 100%; }
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: $body-background-color;
-  color: $body-text-color;
+  background-color: $gray-lighter;
+  color: $gray;
   font-family: $font-family-default;
   font-size: 14px;
   height: 100%;
   margin: 0px;
   padding: 0px;
-  a { @include transition(color .1s ease-in); color: $body-link-color;
-    &:hover { color: darken($body-link-color, 10%);  text-decoration: underline; }
+  a {
+    @include transition(color .1s ease-in);
+    color: $blue;
+    &:hover {
+      color: darken($blue, 10%);
+      text-decoration: underline;
+    }
   }
   p {
     line-height: 20px;
     &.content-icon-spacing { padding-left: 55px; }
   }
   hr {
-    &.dotted { background-image: url('../img/border-gray.png'); background-position: left center; background-repeat: no-repeat; border: 0px; height: 1px; } 
+    &.dotted {
+      background-image: url('../img/border-gray.png');
+      background-position: left center;
+      background-repeat: no-repeat;
+      border: 0px;
+      height: 1px;
+    }
   }
   ul {
     &.dotted {
@@ -111,9 +110,9 @@ body {
 }
 
 h1.page-header,
-h2.page-header { border: 0px; color: $body-heading-color; font-size: 30px; font-weight: 300; line-height: 40px; margin: 20px 0px; padding: 0px; }
-h2 { color: $body-heading-color; font-size: 24px; font-weight: lighter; margin: 20px 0px; }
-h3 { color: $body-heading-color; font-size: 18px; font-weight: normal;
+h2.page-header { border: 0px; color: $blue-dark; font-size: 30px; font-weight: 300; line-height: 40px; margin: 20px 0px; padding: 0px; }
+h2 { color: $blue-dark; font-size: 24px; font-weight: lighter; margin: 20px 0px; }
+h3 { color: $blue-dark; font-size: 18px; font-weight: normal;
   &.address { background-image: url('../img/icons/bubble-address.png'); background-position: left center; background-repeat: no-repeat; background-size: 34px 35px; padding-left: 55px; }
   &.call-us { background-image: url('../img/icons/bubble-call-us.png'); background-position: left center; background-repeat: no-repeat; background-size: 34px 35px; padding-left: 55px; }
   &.email { background-image: url('../img/icons/bubble-email.png'); background-position: left center; background-repeat: no-repeat; background-size: 34px 35px; padding-left: 55px; }

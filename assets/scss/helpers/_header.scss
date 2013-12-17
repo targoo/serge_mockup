@@ -1,6 +1,6 @@
 /* Extra small devices (phones, less than 768px) */
 #header-wrapper {
-  background-color: $header-background-color;
+  background-color: $white;
   .navbar {
     margin: 0px;
     .navbar-inner {
@@ -10,7 +10,7 @@
       @include box-shadow(none);
       background-color: transparent;
       border: 0px;
-      height: 90px;
+      height: 120px;
       padding: 0px;
 
       .logo-wrapper {
@@ -30,16 +30,16 @@
         .logo {
           float:left;
           height: 90px;
-          margin: 0px 15px 0px 0px;
+          margin: 5px 15px 0px 0px;
           line-height: 90px;
         }
 
         .site-slogan {
-          color: $header-slogan-color;
+          color: $gray-light;
           margin-top: 30px;
           margin-left: 15px;
           span {
-            border-left: 2px solid $header-slogan-border-color;
+            border-left: 2px solid $gray-light;
             display: inline-block;
             line-height: 18px;
             padding-left: 15px;
@@ -53,9 +53,10 @@
           line-height: 30px;
           span {
             background-image: url('../img/icons/phone-gray.png');
-            background-position: left center; background-repeat: no-repeat;
+            background-position: left center;
+            background-repeat: no-repeat;
             background-size: 20px 20px;
-            color: $header-info-color;
+            color: $gray;
             font-size: 18px;
             font-weight: 500;
             padding-left: 30px;
@@ -69,7 +70,7 @@
             background-position: left center;
             background-repeat: no-repeat;
             background-size: 17px 11px;
-            color: $header-info-color;
+            color: $gray;
             font-size: 18px;
             font-weight: 500;
             padding-left: 30px;
