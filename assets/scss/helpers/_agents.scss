@@ -1,60 +1,41 @@
-.widget { margin-bottom: 20px;
-  &.our-agents {
-    .agent { @include shadow; background-color: $blue; margin-bottom: 15px; padding: 10px 15px;
-      .image { float: left; margin-right: 20px; width: 70px;
-        img { width: 70px; }
-      }
-      .name { color: $blue; font-size: 16px; margin-bottom: 8px; }
-      .email, .phone { font-size: 12px; }
+/* Extra small devices (phones, less than 768px) */
+.agent {
+  @include shadow;
 
-      &:last-child { margin-bottom: 0px; }
+  .body {
+    background-color: $green;
+  }
+
+  .image {
+    background-color: $orange;
+
+    img { width: 70px;
     }
   }
-}
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .widget {
-    &.our-agents {
-      .agent { padding: 10px;
-        .image { margin-top: 3px; width: 50px;
-          img { width: 50px; }
-        }        
-        .name { font-size: 14px; line-height: 1.5; margin-bottom: 0px; }
-        .email, .phone { line-height: 1.5; }
-      }
-    }
+  .info {
+    background-color: $blue;
   }
-}
 
-@media (min-width: 768px) and (max-width: 979px) {
-  .widget {
-    &.our-agents {
-      .agent { text-align: center;
-        .image { float: none; margin-bottom: 10px; width: 100%; 
-          img { width: auto; }
-        }        
-      }
-    }
-  }  
-}
-
-@media (max-width: 767px) {
-  .widget {
-    &.our-agents { margin-bottom: 0px; }
+  .name {
+    color: $blue;
+    font-size: 16px;
+    margin-bottom: 8px;
   }
+
+  .email, .phone { font-size: 12px; }
+
+  &:last-child { margin-bottom: 0px; }
 }
 
-.our-agents-large {
-  .agent { margin-bottom: 30px; 
-    &:last-child { margin-bottom: 0px; }
-  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
 }
 
-@media (max-width: 767px) {
-  .our-agents-large {
-    .image { text-align: center; }
-    .body {
-      h3 { text-align: center; }
-    }
-  }
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
 }
