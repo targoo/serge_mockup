@@ -1,10 +1,10 @@
 .widget { margin-bottom: 20px;
   &.our-agents {
-    .agent { @include shadow; background-color: $agents-widget-background-color; margin-bottom: 15px; padding: 10px 15px;
+    .agent { @include shadow; background-color: $blue; margin-bottom: 15px; padding: 10px 15px;
       .image { float: left; margin-right: 20px; width: 70px;
         img { width: 70px; }
       }
-      .name { color: $agents-widget-name-color; font-size: 16px; margin-bottom: 8px; }
+      .name { color: $blue; font-size: 16px; margin-bottom: 8px; }
       .email, .phone { font-size: 12px; }
 
       &:last-child { margin-bottom: 0px; }
