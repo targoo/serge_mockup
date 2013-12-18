@@ -1,5 +1,5 @@
 .sidebar {
-  h2 { color: $gray; }
+  h2 { color: $elements-sidebar-h2-color; }
   .widget {
     &.last { margin-bottom: 0px; }
   }
