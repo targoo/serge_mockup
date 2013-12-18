@@ -7,7 +7,10 @@
 @import 'compass/css3/transition';
 @import 'compass';
 
+@import "helpers/sassmatic.scss";
+
 @import 'helpers/mixins';
+
 //@import 'helpers/forms';
 //@import 'helpers/elements';
 @import 'helpers/header';
@@ -18,7 +21,7 @@
 //@import 'helpers/carousel';
 //@import 'helpers/map';
 //@import 'helpers/bottom';
-//@import 'helpers/footer';
+@import 'helpers/footer';
 
 $font-family-default: 'Open Sans', 'Arial', sans-serif;
 

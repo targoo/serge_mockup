@@ -81,6 +81,9 @@
 
       .extra-wrapper {
         padding-top: 25px;
+        a {
+          @include buttonize($orange);
+        }
       }
 
     }
