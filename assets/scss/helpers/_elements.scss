@@ -1,4 +1,55 @@
-.sidebar {
+img {
+  max-width: 100%;
+}
+
+.box {
+  @include shadow;
+  background-color: $white;
+  padding: 20px;
+
+  .office {
+    background-image: url('../img/icons/phone-gray.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    line-height: 26px;
+    margin-bottom: 5px;
+    padding-left: 30px;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/icons/phone-gray@2x.png');
+    }
+  }
+
+  .phone {
+    background-image: url('../img/icons/cell-phone-gray.png');
+    background-position: 4px center;
+    background-repeat: no-repeat;
+    background-size: 12px 20px;
+    line-height: 26px;
+    margin-bottom: 5px;
+    padding-left: 30px;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/icons/cell-phone-gray@2x.png');
+    }
+  }
+
+  .email {
+    background-image: url('../img/icons/mail-gray.png');
+    background-position: 1px center;
+    background-repeat: no-repeat;
+    background-size: 17px 11px;
+    line-height: 26px;
+    padding-left: 30px;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/icons/mail-gray@2x.png');
+    }
+  }
+}
+
+/*.sidebar {
   h2 { color: $gray; }
   .widget {
     &.last { margin-bottom: 0px; }
@@ -99,3 +150,4 @@ iframe { border: 0px; width: 100%;
     }
   }
 }
+*/

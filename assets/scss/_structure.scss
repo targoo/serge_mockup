@@ -12,7 +12,7 @@
 @import 'helpers/mixins';
 
 //@import 'helpers/forms';
-//@import 'helpers/elements';
+@import 'helpers/elements';
 @import 'helpers/header';
 //@import 'helpers/breadcrumb';
 //@import 'helpers/not_found';
@@ -135,7 +135,3 @@ h3 { color: $blue-dark; font-size: 18px; font-weight: normal;
 
 
 
-
-img {
-  max-width: 100%;
-}
