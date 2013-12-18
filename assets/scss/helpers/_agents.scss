@@ -3,18 +3,22 @@
   @include shadow;
 
   .body {
-    background-color: $green;
+    //background-color: $green;
+
+    h3 {
+      
+    }
   }
 
   .image {
-    background-color: $orange;
+    //background-color: $orange;
 
-    img { width: 70px;
+    img {
     }
   }
 
   .info {
-    background-color: $blue;
+    //background-color: $blue;
   }
 
   .name {
