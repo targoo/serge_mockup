@@ -1,0 +1,157 @@
+@mixin shadow {
+  @include box-shadow(0px 1px 1px rgba(0, 0, 0, .10));
+}
+
+@mixin buttonize($color) {
+  @include transition(background-color .2s ease-in);
+  @include background-image(none);
+  @include border-radius(0px);
+  @include box-shadow(none);
+  @include text-shadow(none);
+  background-color: $color;
+  background-image: url('../img/arrow-right-white.png');
+  background-position: 90% center;
+  background-repeat: no-repeat;
+  background-size: 8px 11px; border: 0px;
+  padding: 7px 30px 7px 15px;
+
+  &:hover, &:active, &:focus {
+    @include border-radius(0px);
+    @include box-shadow(none);
+    @include text-shadow(none);
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    background-image: url('../img/arrow-right-white@2x.png');
+  }
+
+  &:hover {
+    background-color: darken($color, 5%);
+  }
+
+  a {
+    color: $white;
+  }
+}
+
+@mixin clearfix-normal {
+  display: inline-block;
+  zoom: 1;
+  &:after {
+    height: 0;
+    content: ".";
+    display: block;
+    clear: both;
+    visibility:hidden;
+  }
+}
+
+// image replacement mixins
+//
+// overview: http://css-tricks.com/css-image-replacement/
+// CSS Image Replacement Museum: http://css-tricks.com/examples/ImageReplacement/
+
+// image replacement from Nicolas Gallagher (2011)
+// http://nicolasgallagher.com/another-css-image-replacement-technique/
+@mixin image-replace($image: null, $display: null, $reset-border-background: true) {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+
+  // reset the border and background-color
+  // see http://css-tricks.com/examples/ImageReplacement/ -> 2012 H5BP Image Replacement
+  @if $reset-border-background == true {
+    border: 0;
+    background-color: transparent;
+  }
+  @if $image != null {
+    @include image-and-dimensions($image, $display);
+  } @else if $display != null {
+    display: $display;
+  }
+}
+
+// image replacement from HTML5 boilerplate (2012)
+// https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css
+@mixin image-replace-h5bp($image: null, $display: null, $reset-border-background: true) {
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+  }
+
+  @if $reset-border-background == true {
+    border: 0;
+    background-color: transparent;
+  }
+  @if $image != null {
+    @include image-and-dimensions($image, $display);
+  } @else if $display != null {
+    display: $display;
+  }
+}
+
+// Phark Method (2003)
+// Very likely the most widely used method.
+// Problematic in RTL situations (or anywhere text-align isn't left).
+@mixin image-replace-indent($image: null, $display: null, $reset-border-background: false) {
+  text-indent: -9999px;
+
+  // reset the border and background-color
+  @if $reset-border-background == true {
+    border: 0;
+    background-color: transparent;
+  }
+  @if $image != null {
+    @include image-and-dimensions($image, $display);
+  } @else if $display != null {
+    display: $display;
+  }
+}
+
+// set dimensions to a given image
+@mixin image-dimensions($image) {
+  width: image-width($image);
+  height: image-height($image);
+}
+
+// set background image and dimensions
+@mixin image-and-dimensions($image, $display: null) {
+  @if $display != null {
+    display: $display;
+  }
+  background: transparent image-url("#{$image}") no-repeat;
+  @include image-dimensions($image);
+}
+
+//Reset your elements box model with ease.
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+  -moz-box-sizing: $box-model; // Firefox <= 19
+  box-sizing: $box-model;
+}
+
+// Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+// Font size
+@mixin font-size($sizeValue: 12 ){
+  font-size: $sizeValue + px; //fallback for old browsers
+  font-size: (0.125 * $sizeValue) + rem;
+}
+
+
+// Line height
+@mixin line-height($heightValue: 12 ){
+  line-height: $heightValue + px; //fallback for old browsers
+  line-height: (0.125 * $heightValue) + rem;
+}
