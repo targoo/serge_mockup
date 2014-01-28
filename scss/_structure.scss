@@ -6,8 +6,10 @@
 @import 'compass/css3/images';
 @import 'compass/css3/text-shadow';
 @import 'compass/css3/transition';
-
 @import 'compass';
+
+// Import vendor retina mixins.
+@import "vendor/retina";
 
 // Helper.
 @import "helpers/sassmatic.scss";
