@@ -12,6 +12,7 @@
 @include retina-sprite-add(buttons, "sprites/buttons/*.png", "sprites-retina/buttons/*.png");
 @include retina-sprite-add(socials, "sprites/socials/*.png", "sprites-retina/socials/*.png");
 
+/* Extra small devices (phones, less than 768px) */
 #footer-wrapper {
   background-color: $blue-darker;
   color: $blue-light;
@@ -68,7 +69,6 @@
       margin:0;
 
       li {
-        padding:0px 0px 20px 0px;
         @include no-bullet();
         color: $white;
 
@@ -93,26 +93,6 @@
 
         i {
           float:left;
-          &.address {
-            @include retina-sprite(address, icons, $hover: false);
-          }
-
-          &.phone {
-            @include retina-sprite(phone, icons, $hover: false);
-          }
-
-          &.email {
-            @include retina-sprite(email, icons, $hover: false);
-          }
-
-          &.gps {
-            @include retina-sprite(gps, icons, $hover: false);
-          }
-
-          &.googlemap {
-            @include retina-sprite(googlemap, icons, $hover: false);
-          }
-
         }
 
         label {
@@ -121,6 +101,36 @@
           padding: 5px;
           width: 70px;
           text-align: right;
+        }
+
+        &.address {
+
+          label {
+            float:left;
+          }
+
+          div {
+          }
+
+          i {
+            @include retina-sprite(address, icons, $hover: false);
+          }
+        }
+
+        &.phone i {
+          @include retina-sprite(phone, icons, $hover: false);
+        }
+
+        &.email i {
+          @include retina-sprite(email, icons, $hover: false);
+        }
+
+        &.gps i {
+          @include retina-sprite(gps, icons, $hover: false);
+        }
+
+        &.googlemap i {
+          @include retina-sprite(googlemap, icons, $hover: false);
         }
 
       }
