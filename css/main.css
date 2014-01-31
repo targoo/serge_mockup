@@ -393,7 +393,7 @@ iframe { border: 0px; width: 100%;
   border: 0;
   background-color: transparent;
   display: block;
-  background: transparent url('/img/../img/logo/logo-groupe.png?1390941964') no-repeat;
+  background: transparent url('/img/../img/logo/logo-groupe.png?1391203575') no-repeat;
   width: 200px;
   height: 75px;
 }
@@ -514,7 +514,7 @@ iframe { border: 0px; width: 100%;
     border: 0;
     background-color: transparent;
     display: block;
-    background: transparent url('/img/../img/logo/logo-groupe.medium.png?1390941964') no-repeat;
+    background: transparent url('/img/../img/logo/logo-groupe.medium.png?1391203575') no-repeat;
     width: 230px;
     height: 110px;
   }
@@ -781,13 +781,13 @@ iframe { border: 0px; width: 100%;
   -moz-transition: background-position 0.2s ease-in, border-color 0.2s ease-in, background-color 0.2s ease-in;
   -o-transition: background-position 0.2s ease-in, border-color 0.2s ease-in, background-color 0.2s ease-in;
   transition: background-position 0.2s ease-in, border-color 0.2s ease-in, background-color 0.2s ease-in;
-  background-color: white;
+  background-color: #f0f0f0;
   background-position: center bottom;
   background-repeat: no-repeat;
-  border: 6px solid #8ebc11;
-  height: 150px;
-  margin: 0px auto 30px auto;
-  width: 150px;
+  border: 6px solid white;
+  margin: 30px auto 30px auto;
+  width: 180px;
+  height: 180px;
 }
 /* line 20, ../scss/helpers/_bottom.scss */
 .bottom-wrapper .personal {

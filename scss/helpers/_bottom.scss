@@ -8,13 +8,13 @@
   .decoration {
     @include border-radius(50%);
     @include transition(background-position .2s ease-in, border-color .2s ease-in, background-color .2s ease-in);
-    background-color: $white;
+    background-color: $gray-lighter;
     background-position: center bottom;
     background-repeat: no-repeat;
-    border: 6px solid $green;
-    height: 150px;
-    margin: 0px auto 30px auto;
-    width: 150px;
+    border: 6px solid $white;
+    margin: 30px auto 30px auto;
+    width: 180px;
+    height: 180px;
   }
 
   .personal {
