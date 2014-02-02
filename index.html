@@ -240,6 +240,9 @@
           </div>
         </div>
 
+        <div data-0="background-color:rgb(0,0,255);" data-500="background-color:rgb(255,0,0);">WOOOT</div>
+
+
       </div>
 
     </div>
@@ -366,6 +369,8 @@
 
     </footer>
 
+
+
   </div>
 
 </div>
@@ -384,6 +389,20 @@
 <script type="text/javascript" src="libraries/iosslider/_src/jquery.iosslider.min.js"></script>
 <script type="text/javascript" src="libraries/bootstrap-fileupload/bootstrap-fileupload.js"></script>
 <script type="text/javascript" src="js/realia.js"></script>
+
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+
+<script type="text/javascript">
+    var s = skrollr.init({
+        edgeStrategy: 'set',
+        easing: {
+            WTF: Math.random,
+            inverted: function(p) {
+                return 1-p;
+            }
+        }
+    });
+</script>
 
 </body>
 </html>

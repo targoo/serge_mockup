@@ -393,7 +393,7 @@ iframe { border: 0px; width: 100%;
   border: 0;
   background-color: transparent;
   display: block;
-  background: transparent url('/img/../img/logo/logo-groupe.png?1391203575') no-repeat;
+  background: transparent url('/img/../img/logo/logo-groupe.png?1391204946') no-repeat;
   width: 200px;
   height: 75px;
 }
@@ -514,7 +514,7 @@ iframe { border: 0px; width: 100%;
     border: 0;
     background-color: transparent;
     display: block;
-    background: transparent url('/img/../img/logo/logo-groupe.medium.png?1391203575') no-repeat;
+    background: transparent url('/img/../img/logo/logo-groupe.medium.png?1391204946') no-repeat;
     width: 230px;
     height: 110px;
   }
@@ -1680,3 +1680,30 @@ http://aetherthemes.com/demo/visia/
 http://themeforest.net/item/superb-responsive-onepage-portfolio/full_screen_preview/5801938
 
 */
+/* line 24, ../scss/main.scss */
+.bcg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Slide 1 */
+/* line 33, ../scss/main.scss */
+#slide-1 .bcg {
+  background: none;
+  background-color: blue;
+  height: 310px;
+  text-align: center;
+}
+
+/* Slide 2 */
+/* line 36, ../scss/main.scss */
+#slide-2 .bcg {
+  background: none;
+  background-color: green;
+  height: 310px;
+  text-align: center;
+}

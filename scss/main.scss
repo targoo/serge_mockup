@@ -19,3 +19,18 @@ http://aetherthemes.com/demo/visia/
 http://themeforest.net/item/superb-responsive-onepage-portfolio/full_screen_preview/5801938
 
 */
+
+
+.bcg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+/* Slide 1 */
+#slide-1 .bcg {background: none; background-color: blue; height: 310px; text-align: center}
+
+/* Slide 2 */
+#slide-2 .bcg {background: none; background-color: green; height: 310px; text-align: center}
