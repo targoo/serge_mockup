@@ -1,0 +1,36 @@
+/* Extra small devices (phones, less than 768px) */
+
+
+/* Feature Box Secundary */
+.benefits .feature-box.secundary h4 {
+  color: #121214;
+}
+
+.benefits .feature-box.secundary div.feature-box-icon {
+  background: transparent;
+  width: 50px;
+  height: 50px;
+}
+
+.benefits .feature-box.secundary div.feature-box-icon i.icon {
+  font-size: 28px;
+}
+
+.benefits .feature-box.secundary div.feature-box-info {
+  padding-left: 60px;
+}
+
+.benefits .feature-box.secundary div.feature-box-icon i.icon {
+  color: #0088cc;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+}

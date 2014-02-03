@@ -1,0 +1,57 @@
+/* Section Highlight */
+section.call-to-action {
+  background: $gray-light;
+  boder-left: 0;
+  boder-right: 0;
+  border-top: 2px solid $blue-darker;
+  padding: 40px 0;
+
+  div.counters strong {
+    display: block;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 60px;
+    color: $green;
+  }
+
+  div.counters label {
+    display: block;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 20px;
+    color: $green;
+  }
+
+  > p,
+  > a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $green;
+  }
+
+}
+
+
+/* Arrows */
+span.arrow {
+  background: transparent url(../HTML/img/arrows.png) no-repeat 0 0;
+  width: 47px;
+  height: 120px;
+  display: inline-block;
+  position: relative;
+}
+
+span.arrow.hl {
+  background-position: -209px 0;
+  width: 120px;
+  height: 47px;
+}
+
+span.arrow.hlb {
+  background-position: -209px -101px;
+  width: 120px;
+  height: 47px;
+}
