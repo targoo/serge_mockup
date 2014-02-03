@@ -33,6 +33,10 @@ Version: 		2.5
             // Parallax
             this.parallax();
 
+            // Off Canvas Menu.
+            this.offCanvasMenu();
+
+
             /*
             // Adds browser version on html class.
 			$.browserSelector();
@@ -111,7 +115,16 @@ Version: 		2.5
 
 		},
 
-		navMenu: function() {
+        offCanvasMenu: function() {
+            $('#btn-nav').on({
+                click: function() {
+                    $('body').toggleClass('nav-open');
+                    return false;
+                }
+            })
+        },
+
+        navMenu: function() {
 
 			// Responsive Menu Events
 			var addActiveClass = false;

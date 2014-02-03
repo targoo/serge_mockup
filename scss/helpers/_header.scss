@@ -24,8 +24,8 @@
           margin-right: 10px;
           width: 35px;
           height: 35px;
-          color: $blue;
           font-size: 30px;
+          color: $blue;
         }
 
         .logo {
@@ -50,17 +50,14 @@
       }
 
       .info-wrapper {
-        padding-top: 0px;
 
         ul.contact {
-          padding:10px 0px 0px;
-          margin:0;
 
           li {
-            padding:0px 0px 10px 0px;
             @include no-bullet();
             color: $gray;
             font-size: 18px;
+            padding-bottom:10px;
 
             label {
               padding: 0px 5px;
@@ -123,11 +120,11 @@
     .info-wrapper {
 
       ul.contact {
-        padding:20px 0px 0px;
+        padding:30px 0px 0px;
 
         li {
           font-size: 20px;
-
+          padding-bottom:10px;
         }
       }
     }
@@ -140,18 +137,4 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
-  #header-wrapper {
-    #btn-nav {
-      background-image: url('../img/btn-nav@2x.png');
-    }
-    .site-phone {
-      span { background-image:url('../img/icons/phone-gray@2x.png'); }
-    }
-    .site-email {
-      a { background-image: url('../img/icons/mail-gray@2x.png'); }
-    }
-  }
 }

@@ -375,8 +375,8 @@ iframe { border: 0px; width: 100%;
   margin-right: 10px;
   width: 35px;
   height: 35px;
-  color: #0063a9;
   font-size: 30px;
+  color: #0063a9;
 }
 /* line 31, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .logo-wrapper .logo {
@@ -390,7 +390,7 @@ iframe { border: 0px; width: 100%;
   border: 0;
   background-color: transparent;
   display: block;
-  background: transparent url('/img/../img/logo/logo-groupe.png?1391364492') no-repeat;
+  background: transparent url('/img/../img/logo/logo-groupe.png?1391463311') no-repeat;
   width: 200px;
   height: 75px;
 }
@@ -407,29 +407,20 @@ iframe { border: 0px; width: 100%;
   line-height: 18px;
   padding-left: 15px;
 }
-/* line 52, ../scss/helpers/_header.scss */
-#header-wrapper .navbar .navbar-inner .info-wrapper {
-  padding-top: 0px;
-}
-/* line 55, ../scss/helpers/_header.scss */
-#header-wrapper .navbar .navbar-inner .info-wrapper ul.contact {
-  padding: 10px 0px 0px;
-  margin: 0;
-}
-/* line 59, ../scss/helpers/_header.scss */
+/* line 56, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li {
-  padding: 0px 0px 10px 0px;
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
   color: #9a9a9a;
   font-size: 18px;
+  padding-bottom: 10px;
 }
-/* line 65, ../scss/helpers/_header.scss */
+/* line 62, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li label {
   padding: 0px 5px;
 }
-/* line 69, ../scss/helpers/_header.scss */
+/* line 66, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li a {
   color: #9a9a9a;
   color: inherit;
@@ -441,7 +432,7 @@ iframe { border: 0px; width: 100%;
 #header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li a:active, #header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li a:focus {
   outline: none;
 }
-/* line 75, ../scss/helpers/_header.scss */
+/* line 72, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li.phone i {
   display: inline-block;
   background-image: url('/img/sprites/icons-s849950ae30.png');
@@ -459,7 +450,7 @@ iframe { border: 0px; width: 100%;
   float: left;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 75, ../scss/helpers/_header.scss */
+  /* line 72, ../scss/helpers/_header.scss */
   #header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li.phone i {
     background-image: url('/img/sprites-retina/icons-sc636bd12df.png');
     -webkit-background-size: 32px auto;
@@ -469,7 +460,7 @@ iframe { border: 0px; width: 100%;
     background-position: 0 -136px;
   }
 }
-/* line 80, ../scss/helpers/_header.scss */
+/* line 77, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li.email i {
   display: inline-block;
   background-image: url('/img/sprites/icons-s849950ae30.png');
@@ -487,7 +478,7 @@ iframe { border: 0px; width: 100%;
   float: left;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 80, ../scss/helpers/_header.scss */
+  /* line 77, ../scss/helpers/_header.scss */
   #header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li.email i {
     background-image: url('/img/sprites-retina/icons-sc636bd12df.png');
     -webkit-background-size: 32px auto;
@@ -497,11 +488,11 @@ iframe { border: 0px; width: 100%;
     background-position: 0 -102px;
   }
 }
-/* line 88, ../scss/helpers/_header.scss */
+/* line 85, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .extra-wrapper {
   padding-top: 25px;
 }
-/* line 90, ../scss/helpers/_header.scss */
+/* line 87, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .extra-wrapper a {
   -webkit-transition: background-color 0.2s ease-in;
   -moz-transition: background-color 0.2s ease-in;
@@ -538,7 +529,7 @@ iframe { border: 0px; width: 100%;
   text-shadow: none;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
-  /* line 90, ../scss/helpers/_header.scss */
+  /* line 87, ../scss/helpers/_header.scss */
   #header-wrapper .navbar .navbar-inner .extra-wrapper a {
     background-image: url("../img/arrow-right-white@2x.png");
   }
@@ -554,11 +545,11 @@ iframe { border: 0px; width: 100%;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* line 112, ../scss/helpers/_header.scss */
+  /* line 109, ../scss/helpers/_header.scss */
   #header-wrapper .navbar .navbar-inner .logo-wrapper .logo {
     padding: 10px 30px 0px 0;
   }
-  /* line 115, ../scss/helpers/_header.scss */
+  /* line 112, ../scss/helpers/_header.scss */
   #header-wrapper .navbar .navbar-inner .logo-wrapper .logo a {
     font: 0/0 a;
     text-shadow: none;
@@ -566,35 +557,22 @@ iframe { border: 0px; width: 100%;
     border: 0;
     background-color: transparent;
     display: block;
-    background: transparent url('/img/../img/logo/logo-groupe.medium.png?1391364492') no-repeat;
+    background: transparent url('/img/../img/logo/logo-groupe.medium.png?1391463311') no-repeat;
     width: 230px;
     height: 110px;
   }
-  /* line 125, ../scss/helpers/_header.scss */
+  /* line 122, ../scss/helpers/_header.scss */
   #header-wrapper .info-wrapper ul.contact {
-    padding: 20px 0px 0px;
+    padding: 30px 0px 0px;
   }
-  /* line 128, ../scss/helpers/_header.scss */
+  /* line 125, ../scss/helpers/_header.scss */
   #header-wrapper .info-wrapper ul.contact li {
     font-size: 20px;
+    padding-bottom: 10px;
   }
 }
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
-@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
-  /* line 147, ../scss/helpers/_header.scss */
-  #header-wrapper #btn-nav {
-    background-image: url("../img/btn-nav@2x.png");
-  }
-  /* line 151, ../scss/helpers/_header.scss */
-  #header-wrapper .site-phone span {
-    background-image: url("../img/icons/phone-gray@2x.png");
-  }
-  /* line 154, ../scss/helpers/_header.scss */
-  #header-wrapper .site-email a {
-    background-image: url("../img/icons/mail-gray@2x.png");
-  }
-}
 /* Extra small devices (phones, less than 768px) */
 /* line 2, ../scss/helpers/_navigation.scss */
 #navigation-wrapper {
