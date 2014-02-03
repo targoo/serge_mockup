@@ -347,11 +347,11 @@ iframe { border: 0px; width: 100%;
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 /* Extra small devices (phones, less than 768px) */
-/* line 2, ../scss/helpers/_header.scss */
+/* line 4, ../scss/helpers/_header.scss */
 #header-wrapper {
   background-color: white;
 }
-/* line 7, ../scss/helpers/_header.scss */
+/* line 9, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   background-image: none;
@@ -368,24 +368,21 @@ iframe { border: 0px; width: 100%;
   height: 80px;
   padding: 0px;
 }
-/* line 19, ../scss/helpers/_header.scss */
+/* line 21, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .logo-wrapper #btn-nav {
   float: left;
-  background-image: url("../img/btn-nav.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 35px 35px;
-  height: 35px;
   margin-top: 30px;
   margin-right: 10px;
-  text-indent: -9999px;
   width: 35px;
+  height: 35px;
+  color: #0063a9;
+  font-size: 30px;
 }
-/* line 32, ../scss/helpers/_header.scss */
+/* line 31, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .logo-wrapper .logo {
   float: left;
 }
-/* line 35, ../scss/helpers/_header.scss */
+/* line 34, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .logo-wrapper .logo a {
   font: 0/0 a;
   text-shadow: none;
@@ -397,59 +394,114 @@ iframe { border: 0px; width: 100%;
   width: 200px;
   height: 75px;
 }
-/* line 40, ../scss/helpers/_header.scss */
+/* line 39, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .logo-wrapper .site-slogan {
   color: #b5b5b5;
   margin-top: 30px;
   margin-left: 15px;
 }
-/* line 44, ../scss/helpers/_header.scss */
+/* line 43, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .logo-wrapper .site-slogan span {
   border-left: 2px solid #b5b5b5;
   display: inline-block;
   line-height: 18px;
   padding-left: 15px;
 }
-/* line 53, ../scss/helpers/_header.scss */
+/* line 52, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .info-wrapper {
-  padding-top: 12px;
+  padding-top: 0px;
 }
 /* line 55, ../scss/helpers/_header.scss */
-#header-wrapper .navbar .navbar-inner .info-wrapper .info-phone {
-  line-height: 30px;
+#header-wrapper .navbar .navbar-inner .info-wrapper ul.contact {
+  padding: 10px 0px 0px;
+  margin: 0;
 }
-/* line 57, ../scss/helpers/_header.scss */
-#header-wrapper .navbar .navbar-inner .info-wrapper .info-phone span {
-  background-image: url("../img/icons/phone-gray.png");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  color: #707070;
+/* line 59, ../scss/helpers/_header.scss */
+#header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li {
+  padding: 0px 0px 10px 0px;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  color: #9a9a9a;
   font-size: 18px;
-  font-weight: 500;
-  padding-left: 30px;
+}
+/* line 65, ../scss/helpers/_header.scss */
+#header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li label {
+  padding: 0px 5px;
 }
 /* line 69, ../scss/helpers/_header.scss */
-#header-wrapper .navbar .navbar-inner .info-wrapper .info-email {
-  line-height: 30px;
+#header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li a {
+  color: #9a9a9a;
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  cursor: pointer;
 }
-/* line 71, ../scss/helpers/_header.scss */
-#header-wrapper .navbar .navbar-inner .info-wrapper .info-email a {
-  background-image: url("../img/icons/mail-gray.png");
-  background-position: left center;
+/* line 6, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_unstyled-link.scss */
+#header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li a:active, #header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li a:focus {
+  outline: none;
+}
+/* line 75, ../scss/helpers/_header.scss */
+#header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li.phone i {
+  display: inline-block;
+  background-image: url('/img/sprites/icons-s849950ae30.png');
+  background-position: 0 -136px;
   background-repeat: no-repeat;
-  background-size: 17px 11px;
-  color: #707070;
-  font-size: 18px;
-  font-weight: 500;
-  padding-left: 30px;
-  text-decoration: none;
+  height: 32px;
+  width: 32px;
+  /**
+   * Option variable to turn on/off IE8 support.
+   *
+   * This requires Modernizr's test for `css-mediaqueries` and RespondJS
+   *
+   * Set to `1` to turn on support.
+   */
+  float: left;
 }
-/* line 85, ../scss/helpers/_header.scss */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 75, ../scss/helpers/_header.scss */
+  #header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li.phone i {
+    background-image: url('/img/sprites-retina/icons-sc636bd12df.png');
+    -webkit-background-size: 32px auto;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    background-size: 32px auto;
+    background-position: 0 -136px;
+  }
+}
+/* line 80, ../scss/helpers/_header.scss */
+#header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li.email i {
+  display: inline-block;
+  background-image: url('/img/sprites/icons-s849950ae30.png');
+  background-position: 0 -102px;
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 32px;
+  /**
+   * Option variable to turn on/off IE8 support.
+   *
+   * This requires Modernizr's test for `css-mediaqueries` and RespondJS
+   *
+   * Set to `1` to turn on support.
+   */
+  float: left;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 80, ../scss/helpers/_header.scss */
+  #header-wrapper .navbar .navbar-inner .info-wrapper ul.contact li.email i {
+    background-image: url('/img/sprites-retina/icons-sc636bd12df.png');
+    -webkit-background-size: 32px auto;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    background-size: 32px auto;
+    background-position: 0 -102px;
+  }
+}
+/* line 88, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .extra-wrapper {
   padding-top: 25px;
 }
-/* line 87, ../scss/helpers/_header.scss */
+/* line 90, ../scss/helpers/_header.scss */
 #header-wrapper .navbar .navbar-inner .extra-wrapper a {
   -webkit-transition: background-color 0.2s ease-in;
   -moz-transition: background-color 0.2s ease-in;
@@ -486,7 +538,7 @@ iframe { border: 0px; width: 100%;
   text-shadow: none;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
-  /* line 87, ../scss/helpers/_header.scss */
+  /* line 90, ../scss/helpers/_header.scss */
   #header-wrapper .navbar .navbar-inner .extra-wrapper a {
     background-image: url("../img/arrow-right-white@2x.png");
   }
@@ -502,11 +554,11 @@ iframe { border: 0px; width: 100%;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  /* line 109, ../scss/helpers/_header.scss */
+  /* line 112, ../scss/helpers/_header.scss */
   #header-wrapper .navbar .navbar-inner .logo-wrapper .logo {
     padding: 10px 30px 0px 0;
   }
-  /* line 112, ../scss/helpers/_header.scss */
+  /* line 115, ../scss/helpers/_header.scss */
   #header-wrapper .navbar .navbar-inner .logo-wrapper .logo a {
     font: 0/0 a;
     text-shadow: none;
@@ -518,19 +570,27 @@ iframe { border: 0px; width: 100%;
     width: 230px;
     height: 110px;
   }
+  /* line 125, ../scss/helpers/_header.scss */
+  #header-wrapper .info-wrapper ul.contact {
+    padding: 20px 0px 0px;
+  }
+  /* line 128, ../scss/helpers/_header.scss */
+  #header-wrapper .info-wrapper ul.contact li {
+    font-size: 20px;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 /* Large devices (large desktops, 1200px and up) */
 @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
-  /* line 133, ../scss/helpers/_header.scss */
+  /* line 147, ../scss/helpers/_header.scss */
   #header-wrapper #btn-nav {
     background-image: url("../img/btn-nav@2x.png");
   }
-  /* line 137, ../scss/helpers/_header.scss */
+  /* line 151, ../scss/helpers/_header.scss */
   #header-wrapper .site-phone span {
     background-image: url("../img/icons/phone-gray@2x.png");
   }
-  /* line 140, ../scss/helpers/_header.scss */
+  /* line 154, ../scss/helpers/_header.scss */
   #header-wrapper .site-email a {
     background-image: url("../img/icons/mail-gray@2x.png");
   }
@@ -913,40 +973,50 @@ iframe { border: 0px; width: 100%;
   padding: 5px;
   width: 70px;
   text-align: right;
+  float: left;
 }
-/* line 85, ../scss/helpers/_footer.scss */
+/* line 84, ../scss/helpers/_footer.scss */
+#footer-wrapper #footer-top ul.opening li div {
+  padding: 5px;
+}
+/* line 90, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer-top ul.contact {
   padding: 0;
   margin: 0;
 }
-/* line 89, ../scss/helpers/_footer.scss */
+/* line 94, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer-top ul.contact li {
-  padding: 0px 0px 20px 0px;
+  padding: 0px 0px 10px 0px;
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
   color: white;
 }
-/* line 94, ../scss/helpers/_footer.scss */
+/* line 99, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer-top ul.contact li i {
   float: left;
 }
-/* line 98, ../scss/helpers/_footer.scss */
+/* line 103, ../scss/helpers/_footer.scss */
+#footer-wrapper #footer-top ul.contact li a {
+  color: white;
+}
+/* line 107, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer-top ul.contact li label {
   color: #0063a9;
   font-weight: bold;
   padding: 5px;
   width: 70px;
   text-align: right;
-}
-/* line 108, ../scss/helpers/_footer.scss */
-#footer-wrapper #footer-top ul.contact li.address label {
   float: left;
 }
-/* line 115, ../scss/helpers/_footer.scss */
+/* line 116, ../scss/helpers/_footer.scss */
+#footer-wrapper #footer-top ul.contact li div {
+  padding: 5px;
+}
+/* line 120, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer-top ul.contact li.address i {
   display: inline-block;
-  background-image: url('/img/sprites/icons-s31ea6840dc.png');
+  background-image: url('/img/sprites/icons-s849950ae30.png');
   background-position: 0 -68px;
   background-repeat: no-repeat;
   height: 32px;
@@ -960,9 +1030,9 @@ iframe { border: 0px; width: 100%;
    */
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 115, ../scss/helpers/_footer.scss */
+  /* line 120, ../scss/helpers/_footer.scss */
   #footer-wrapper #footer-top ul.contact li.address i {
-    background-image: url('/img/sprites-retina/icons-s1fb02432cd.png');
+    background-image: url('/img/sprites-retina/icons-sc636bd12df.png');
     -webkit-background-size: 32px auto;
     -moz-background-size: 32px auto;
     -o-background-size: 32px auto;
@@ -970,38 +1040,11 @@ iframe { border: 0px; width: 100%;
     background-position: 0 -68px;
   }
 }
-/* line 120, ../scss/helpers/_footer.scss */
+/* line 124, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer-top ul.contact li.phone i {
   display: inline-block;
-  background-image: url('/img/sprites/icons-s31ea6840dc.png');
-  background-position: 0 -136px;
-  background-repeat: no-repeat;
-  height: 32px;
-  width: 32px;
-  /**
-   * Option variable to turn on/off IE8 support.
-   *
-   * This requires Modernizr's test for `css-mediaqueries` and RespondJS
-   *
-   * Set to `1` to turn on support.
-   */
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 120, ../scss/helpers/_footer.scss */
-  #footer-wrapper #footer-top ul.contact li.phone i {
-    background-image: url('/img/sprites-retina/icons-s1fb02432cd.png');
-    -webkit-background-size: 32px auto;
-    -moz-background-size: 32px auto;
-    -o-background-size: 32px auto;
-    background-size: 32px auto;
-    background-position: 0 -136px;
-  }
-}
-/* line 124, ../scss/helpers/_footer.scss */
-#footer-wrapper #footer-top ul.contact li.email i {
-  display: inline-block;
-  background-image: url('/img/sprites/icons-s31ea6840dc.png');
-  background-position: 0 -102px;
+  background-image: url('/img/sprites/icons-s849950ae30.png');
+  background-position: 0 -238px;
   background-repeat: no-repeat;
   height: 32px;
   width: 32px;
@@ -1015,20 +1058,20 @@ iframe { border: 0px; width: 100%;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   /* line 124, ../scss/helpers/_footer.scss */
-  #footer-wrapper #footer-top ul.contact li.email i {
-    background-image: url('/img/sprites-retina/icons-s1fb02432cd.png');
+  #footer-wrapper #footer-top ul.contact li.phone i {
+    background-image: url('/img/sprites-retina/icons-sc636bd12df.png');
     -webkit-background-size: 32px auto;
     -moz-background-size: 32px auto;
     -o-background-size: 32px auto;
     background-size: 32px auto;
-    background-position: 0 -102px;
+    background-position: 0 -204px;
   }
 }
 /* line 128, ../scss/helpers/_footer.scss */
-#footer-wrapper #footer-top ul.contact li.gps i {
+#footer-wrapper #footer-top ul.contact li.email i {
   display: inline-block;
-  background-image: url('/img/sprites/icons-s31ea6840dc.png');
-  background-position: 0 -34px;
+  background-image: url('/img/sprites/icons-s849950ae30.png');
+  background-position: 0 -204px;
   background-repeat: no-repeat;
   height: 32px;
   width: 32px;
@@ -1042,20 +1085,20 @@ iframe { border: 0px; width: 100%;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   /* line 128, ../scss/helpers/_footer.scss */
-  #footer-wrapper #footer-top ul.contact li.gps i {
-    background-image: url('/img/sprites-retina/icons-s1fb02432cd.png');
+  #footer-wrapper #footer-top ul.contact li.email i {
+    background-image: url('/img/sprites-retina/icons-sc636bd12df.png');
     -webkit-background-size: 32px auto;
     -moz-background-size: 32px auto;
     -o-background-size: 32px auto;
     background-size: 32px auto;
-    background-position: 0 -34px;
+    background-position: 0 -170px;
   }
 }
 /* line 132, ../scss/helpers/_footer.scss */
-#footer-wrapper #footer-top ul.contact li.googlemap i {
+#footer-wrapper #footer-top ul.contact li.gps i {
   display: inline-block;
-  background-image: url('/img/sprites/icons-s31ea6840dc.png');
-  background-position: 0 0;
+  background-image: url('/img/sprites/icons-s849950ae30.png');
+  background-position: 0 -34px;
   background-repeat: no-repeat;
   height: 32px;
   width: 32px;
@@ -1069,8 +1112,62 @@ iframe { border: 0px; width: 100%;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   /* line 132, ../scss/helpers/_footer.scss */
+  #footer-wrapper #footer-top ul.contact li.gps i {
+    background-image: url('/img/sprites-retina/icons-sc636bd12df.png');
+    -webkit-background-size: 32px auto;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    background-size: 32px auto;
+    background-position: 0 -34px;
+  }
+}
+/* line 136, ../scss/helpers/_footer.scss */
+#footer-wrapper #footer-top ul.contact li.fax i {
+  display: inline-block;
+  background-image: url('/img/sprites/icons-s849950ae30.png');
+  background-position: 0 -170px;
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 32px;
+  /**
+   * Option variable to turn on/off IE8 support.
+   *
+   * This requires Modernizr's test for `css-mediaqueries` and RespondJS
+   *
+   * Set to `1` to turn on support.
+   */
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 136, ../scss/helpers/_footer.scss */
+  #footer-wrapper #footer-top ul.contact li.fax i {
+    background-image: url('/img/sprites-retina/icons-sc636bd12df.png');
+    -webkit-background-size: 32px auto;
+    -moz-background-size: 32px auto;
+    -o-background-size: 32px auto;
+    background-size: 32px auto;
+    background-position: 0 -238px;
+  }
+}
+/* line 140, ../scss/helpers/_footer.scss */
+#footer-wrapper #footer-top ul.contact li.googlemap i {
+  display: inline-block;
+  background-image: url('/img/sprites/icons-s849950ae30.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 32px;
+  /**
+   * Option variable to turn on/off IE8 support.
+   *
+   * This requires Modernizr's test for `css-mediaqueries` and RespondJS
+   *
+   * Set to `1` to turn on support.
+   */
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  /* line 140, ../scss/helpers/_footer.scss */
   #footer-wrapper #footer-top ul.contact li.googlemap i {
-    background-image: url('/img/sprites-retina/icons-s1fb02432cd.png');
+    background-image: url('/img/sprites-retina/icons-sc636bd12df.png');
     -webkit-background-size: 32px auto;
     -moz-background-size: 32px auto;
     -o-background-size: 32px auto;
@@ -1078,35 +1175,39 @@ iframe { border: 0px; width: 100%;
     background-position: 0 0;
   }
 }
-/* line 141, ../scss/helpers/_footer.scss */
+/* line 145, ../scss/helpers/_footer.scss */
+#footer-wrapper #footer-top ul.contact li.googlemap a {
+  margin-left: 30px;
+}
+/* line 155, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer {
   border: 0px;
   margin-top: 0px;
   padding: 25px 0px;
 }
-/* line 147, ../scss/helpers/_footer.scss */
+/* line 161, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer #footer-inner p {
   margin: 0px;
 }
-/* line 150, ../scss/helpers/_footer.scss */
+/* line 164, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer #footer-inner p a {
   text-decoration: none;
 }
-/* line 156, ../scss/helpers/_footer.scss */
+/* line 170, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer #footer-inner #block-menu-menu-share .content {
   overflow: hidden;
 }
-/* line 161, ../scss/helpers/_footer.scss */
+/* line 175, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav {
   float: right;
   margin: 0px;
 }
-/* line 165, ../scss/helpers/_footer.scss */
+/* line 179, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li {
   display: inline-block;
   margin-left: 20px;
 }
-/* line 169, ../scss/helpers/_footer.scss */
+/* line 183, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a {
   height: 20px;
   width: 20px;
@@ -1114,11 +1215,11 @@ iframe { border: 0px; width: 100%;
   overflow: hidden;
   text-align: left;
 }
-/* line 175, ../scss/helpers/_footer.scss */
+/* line 189, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a:hover {
   background-color: #02293a;
 }
-/* line 179, ../scss/helpers/_footer.scss */
+/* line 193, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a.facebook {
   display: inline-block;
   background-image: url('/img/sprites/socials-s414c682e3f.png');
@@ -1139,7 +1240,7 @@ iframe { border: 0px; width: 100%;
   background-position: 0 -3978px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 179, ../scss/helpers/_footer.scss */
+  /* line 193, ../scss/helpers/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav li a.facebook {
     background-image: url('/img/sprites-retina/socials-sa3c45da858.png');
     -webkit-background-size: 32px auto;
@@ -1153,7 +1254,7 @@ iframe { border: 0px; width: 100%;
     background-position: 0 -4012px;
   }
 }
-/* line 183, ../scss/helpers/_footer.scss */
+/* line 197, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a.twitter {
   display: inline-block;
   background-image: url('/img/sprites/socials-s414c682e3f.png');
@@ -1174,7 +1275,7 @@ iframe { border: 0px; width: 100%;
   background-position: 0 -2414px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 183, ../scss/helpers/_footer.scss */
+  /* line 197, ../scss/helpers/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav li a.twitter {
     background-image: url('/img/sprites-retina/socials-sa3c45da858.png');
     -webkit-background-size: 32px auto;
@@ -1188,7 +1289,7 @@ iframe { border: 0px; width: 100%;
     background-position: 0 -2006px;
   }
 }
-/* line 187, ../scss/helpers/_footer.scss */
+/* line 201, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a.flickr {
   display: inline-block;
   background-image: url('/img/sprites/socials-s414c682e3f.png');
@@ -1209,7 +1310,7 @@ iframe { border: 0px; width: 100%;
   background-position: 0 -3740px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 187, ../scss/helpers/_footer.scss */
+  /* line 201, ../scss/helpers/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav li a.flickr {
     background-image: url('/img/sprites-retina/socials-sa3c45da858.png');
     -webkit-background-size: 32px auto;
@@ -1223,7 +1324,7 @@ iframe { border: 0px; width: 100%;
     background-position: 0 -3366px;
   }
 }
-/* line 191, ../scss/helpers/_footer.scss */
+/* line 205, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a.vimeo {
   display: inline-block;
   background-image: url('/img/sprites/socials-s414c682e3f.png');
@@ -1244,7 +1345,7 @@ iframe { border: 0px; width: 100%;
   background-position: 0 -1598px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 191, ../scss/helpers/_footer.scss */
+  /* line 205, ../scss/helpers/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav li a.vimeo {
     background-image: url('/img/sprites-retina/socials-sa3c45da858.png');
     -webkit-background-size: 32px auto;
@@ -1258,7 +1359,7 @@ iframe { border: 0px; width: 100%;
     background-position: 0 -1700px;
   }
 }
-/* line 195, ../scss/helpers/_footer.scss */
+/* line 209, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a.google {
   display: inline-block;
   background-image: url('/img/sprites/socials-s414c682e3f.png');
@@ -1279,7 +1380,7 @@ iframe { border: 0px; width: 100%;
   background-position: 0 -578px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 195, ../scss/helpers/_footer.scss */
+  /* line 209, ../scss/helpers/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav li a.google {
     background-image: url('/img/sprites-retina/socials-sa3c45da858.png');
     -webkit-background-size: 32px auto;
@@ -1293,7 +1394,7 @@ iframe { border: 0px; width: 100%;
     background-position: 0 -782px;
   }
 }
-/* line 199, ../scss/helpers/_footer.scss */
+/* line 213, ../scss/helpers/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a.linkedin {
   display: inline-block;
   background-image: url('/img/sprites/socials-s414c682e3f.png');
@@ -1314,7 +1415,7 @@ iframe { border: 0px; width: 100%;
   background-position: 0 -3332px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 199, ../scss/helpers/_footer.scss */
+  /* line 213, ../scss/helpers/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav li a.linkedin {
     background-image: url('/img/sprites-retina/socials-sa3c45da858.png');
     -webkit-background-size: 32px auto;
@@ -1330,7 +1431,7 @@ iframe { border: 0px; width: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 214, ../scss/helpers/_footer.scss */
+  /* line 228, ../scss/helpers/_footer.scss */
   #footer-wrapper #footer-top table.contact th {
     background-position: left center !important;
     display: block;
@@ -1339,34 +1440,34 @@ iframe { border: 0px; width: 100%;
     padding-top: 12px;
     text-align: left;
   }
-  /* line 215, ../scss/helpers/_footer.scss */
+  /* line 229, ../scss/helpers/_footer.scss */
   #footer-wrapper #footer-top table.contact td {
     display: table;
     padding-bottom: 10px;
   }
-  /* line 219, ../scss/helpers/_footer.scss */
+  /* line 233, ../scss/helpers/_footer.scss */
   #footer-wrapper #footer-top table.contact tr:first-child th {
     background-position: left top !important;
     padding-top: 0px;
   }
 }
 @media (max-width: 767px) {
-  /* line 229, ../scss/helpers/_footer.scss */
+  /* line 243, ../scss/helpers/_footer.scss */
   #footer-wrapper #footer-top {
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 234, ../scss/helpers/_footer.scss */
+  /* line 248, ../scss/helpers/_footer.scss */
   #footer-wrapper #footer #footer-inner {
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 237, ../scss/helpers/_footer.scss */
+  /* line 251, ../scss/helpers/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav {
     float: none;
     margin-top: 20px;
   }
-  /* line 241, ../scss/helpers/_footer.scss */
+  /* line 255, ../scss/helpers/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav li:first-child {
     margin-left: 0px;
   }
@@ -1611,7 +1712,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   background-color: #f0f0f0;
-  color: #707070;
+  color: #9a9a9a;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   height: 100%;
