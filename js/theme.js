@@ -36,6 +36,8 @@ Version: 		2.5
             // Off Canvas Menu.
             this.offCanvasMenu();
 
+            // Owl Carousel
+            this.owlCarousel();
 
             /*
             // Adds browser version on html class.
@@ -69,9 +71,6 @@ Version: 		2.5
 
 			// Tooltips
 			$("a[rel=tooltip]").tooltip();
-
-			// Owl Carousel
-			this.owlCarousel();
 
 			// Sort
 			this.sort();
