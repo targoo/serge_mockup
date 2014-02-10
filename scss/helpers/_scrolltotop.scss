@@ -2,7 +2,7 @@
 // Scroll to Top.
 a.scroll-to-top{
   @include transition(all 0.3s);
-  @include border-radius(7px 7px 0 0);
+  @include border-radius(8px 8px 0 0);
   background: $gray;
   bottom: 0px;
   color: $white;

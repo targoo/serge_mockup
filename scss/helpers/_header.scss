@@ -3,6 +3,7 @@
 /* Extra small devices (phones, less than 768px) */
 #header-wrapper {
   background-color: $white;
+  @include background(image-url("/img/patterns/large/lightpaperfibers.png"));
 
   .navbar {
     margin-bottom: 10px;

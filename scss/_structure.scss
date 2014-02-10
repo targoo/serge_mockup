@@ -31,13 +31,13 @@ $font-family-alternative: 'Shadows Into Light', cursive;
 
 @import 'helpers/navigation';
 
+@import 'helpers/intro';
+
 //@import 'helpers/not_found';
 //@import 'helpers/slider';
 
 //@import 'helpers/carousel';
 //@import 'helpers/map';
-
-//@import 'helpers/intro';
 
 ///@import 'helpers/footer';
 
@@ -61,4 +61,4 @@ $font-family-alternative: 'Shadows Into Light', cursive;
 
 ///@import 'helpers/banner';
 
-///@import 'helpers/scrolltotop';
+@import 'helpers/scrolltotop';

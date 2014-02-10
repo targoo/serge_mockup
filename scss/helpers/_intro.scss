@@ -1,23 +1,22 @@
 /* Extra small devices (phones, less than 768px) */
-.intro-wrapper {
+#intro-wrapper {
   background-color: $white;
   padding: 30px 0px;
   text-align: center;
+  border-bottom: 1px solid $blue;
+
+  @include background(image-url("/img/patterns/small/diagonal-noise.png"));
+  @include background(image-url("/img/patterns/small/fabric-plaid.png"));
+  @include background(image-url("/img/patterns/small/grid-noise.png"));
+  @include background(image-url("/img/patterns/small/pw-maze-white.png"));
+  @include background(image-url("/img/patterns/large/lightpaperfibers.png"));
 
   .item {
-
-    background-color: blue;
-    border: 1px solid red;
     margin: 0px;
     padding: 0px;
 
     h2 {
-      background-color: green;
       font-size: 25px;
-    }
-
-    p {
-      background-color: pink;
     }
 
     .decoration {
@@ -54,12 +53,15 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  background-image: url(/img/background/background-facade.jpg);
+  #intro-wrapper {
+    border-bottom: 0px none;
+    background-image: url(/img/background/background-facade.jpg);
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .intro-wrapper {
+  #intro-wrapper {
 
     .decoration {
       margin: 10px auto 20px auto;
