@@ -9,7 +9,7 @@
   @include box-shadow(none);
   @include text-shadow(none);
   background-color: $color;
-  background-image: url('../img/arrow-right-white.png');
+  background-image: url('../img/arrows/arrow-right-white.png');
   background-position: 90% center;
   background-repeat: no-repeat;
   background-size: 8px 11px; border: 0px;
@@ -22,7 +22,7 @@
   }
 
   @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
-    background-image: url('../img/arrow-right-white@2x.png');
+    background-image: url('../img/arrows/arrow-right-white@2x.png');
   }
 
   &:hover {
@@ -114,13 +114,13 @@
   }
 }
 
-// set dimensions to a given image
+// set dimensions to a given image.
 @mixin image-dimensions($image) {
   width: image-width($image);
   height: image-height($image);
 }
 
-// set background image and dimensions
+// Set background image and dimensions.
 @mixin image-and-dimensions($image, $display: null) {
   @if $display != null {
     display: $display;
@@ -129,28 +129,27 @@
   @include image-dimensions($image);
 }
 
-//Reset your elements box model with ease.
+// Reset your elements box model with ease.
 @mixin box-sizing($box-model) {
   -webkit-box-sizing: $box-model; // Safari <= 5
   -moz-box-sizing: $box-model; // Firefox <= 19
   box-sizing: $box-model;
 }
 
-// Opacity
+// Opacity.
 @mixin opacity($opacity) {
   opacity: $opacity;
   $opacity-ie: $opacity * 100;
   filter: alpha(opacity=$opacity-ie); //IE8
 }
 
-// Font size
+// Font size.
 @mixin font-size($sizeValue: 12 ){
   font-size: $sizeValue + px; //fallback for old browsers
   font-size: (0.125 * $sizeValue) + rem;
 }
 
-
-// Line height
+// Line height.
 @mixin line-height($heightValue: 12 ){
   line-height: $heightValue + px; //fallback for old browsers
   line-height: (0.125 * $heightValue) + rem;

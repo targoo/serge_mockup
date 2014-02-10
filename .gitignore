@@ -1,4 +1,4 @@
 .idea
 .idea/*
-assets/.sass-cache
-assets/.sass-cache/*
+.sass-cache
+.sass-cache/*

@@ -9,11 +9,11 @@
   width: 70%;
   position: absolute;
   top: 0;
-  background-color: $blue;
 
   // First level.
   .nav {
     display: block;
+    background-color: $blue;
 
     li {
       display: block;
@@ -29,7 +29,16 @@
 
         &:hover {
           color: $blue-light;
+          background-color: $blue;
         }
+      }
+
+      span {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 10px 30px;
+        color: $white;
       }
 
       &:hover {
@@ -122,7 +131,7 @@
             background-position: 90% center;
             background-repeat: no-repeat;
             background-size: 11px 8px;
-            padding-right: 40px;
+            padding-right: 25px;
           }
 
           li {
@@ -212,10 +221,44 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .navigation {
+
+    .nav {
+
+      li {
+
+        &.menuparent {
+
+          > .nolink, > a {
+            padding-right: 40px;
+          }
+
+        }
+
+      }
+    }
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .navigation {
+
+    .nav {
+
+      li {
+
+        &.menuparent {
+
+          > .nolink, > a {
+            padding-right: 50px;
+          }
+
+        }
+
+      }
+    }
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {

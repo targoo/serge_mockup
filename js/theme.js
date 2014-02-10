@@ -39,6 +39,9 @@ Version: 		2.5
             // Owl Carousel
             this.owlCarousel();
 
+            // Scroll to Top Button.
+            $.scrollToTop();
+
             /*
             // Adds browser version on html class.
 			$.browserSelector();
@@ -48,17 +51,11 @@ Version: 		2.5
 				$.smoothScroll();
 			}
 
-			// Scroll to Top Button.
-			$.scrollToTop();
-
 			// Nav Menu
 			this.navMenu();
 
 			// Header Search
 			this.headerSearch();
-
-			// Animations
-			this.animations();
 
 			// Word Rotate
 			this.wordRotate();
@@ -86,9 +83,6 @@ Version: 		2.5
 
 			// Lightbox
 			this.lightbox();
-
-			// Parallax
-			this.parallax();
 			*/
 
 		},
@@ -294,6 +288,7 @@ Version: 		2.5
 			$("[data-appear-animation]").each(function() {
 
 				var $this = $(this);
+                console.log($this);
 
 				$this.addClass("appear-animation");
 

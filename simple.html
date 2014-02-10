@@ -18,21 +18,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Web Fonts  -->
-  <link
-    href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light"
-    rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
 
   <!-- Libs CSS -->
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
 
   <link rel="stylesheet" href="libraries/chosen/chosen.css" type="text/css">
-  <link rel="stylesheet"
-        href="libraries/bootstrap-fileupload/bootstrap-fileupload.css"
-        type="text/css">
-  <link rel="stylesheet"
-        href="libraries/jquery-ui-1.10.2.custom/css/ui-lightness/jquery-ui-1.10.2.custom.min.css"
-        type="text/css">
+  <link rel="stylesheet" href="libraries/bootstrap-fileupload/bootstrap-fileupload.css" type="text/css">
+  <link rel="stylesheet" href="libraries/jquery-ui-1.10.2.custom/css/ui-lightness/jquery-ui-1.10.2.custom.min.css" type="text/css">
 
   <!-- Theme CSS -->
   <link rel="stylesheet" href="css/main.css" type="text/css">
@@ -131,11 +125,19 @@
             <span class="menuparent nolink">Société</span>
             <ul>
               <li><a href="personnel.html">Votre équipe</a></li>
-              <li><a href="styleguide.html">Historique</a></li>
+              <li class="menuparent">
+                <a href="styleguide.html">Historique</a>
+                <ul>
+                  <li><a href="styleguide.html">Styles</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
           <li class="menuparent">
-            <span class="menuparent nolink">Particulier</span>
+            <a href="simple.html">Particulier</a>
+            <ul>
+              <li><a href="simple.html">Simple</a></li>
+            </ul>
           </li>
           <li class="menuparent">
             <span class="menuparent nolink">Professionel</span>
@@ -153,9 +155,35 @@
     </div>
   </div>
 
+  <!-- BANNER -->
+  <div id="banner" class="banner hidden-xs"></div>
+
+  <!-- TITLE -->
+  <section class="title">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Simple</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10">
+          <h1>Simple</h1>
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CONTENT -->
   <div id="content">
-
+    <div class="container">
+      <p>lorem ipsum</p>
+    </div>
   </div>
 
 
@@ -320,6 +348,8 @@
 </footer>
 
 </div>
+
+<a class="scroll-to-top" href="#" id="scrollToTop"><i class="icon icon-chevron-up icon-white"></i></a>
 
 </div>
 

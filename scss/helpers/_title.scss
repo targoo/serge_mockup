@@ -1,6 +1,4 @@
-
 /* Extra small devices (phones, less than 768px) */
-/* Page Top */
 section.title {
   background-color: $gray-lighter;
   border-top: 1px solid $gray;
@@ -36,13 +34,6 @@ section.title {
       }
     }
   }
-}
-
-div.google-map {
-  background: #E5E3DF;
-  height: 250px;
-  margin: 0px 0 0px 0;
-  width: 100%;
 }
 
 /* Small devices (tablets, 768px and up) */
