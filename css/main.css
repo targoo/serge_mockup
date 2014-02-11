@@ -248,7 +248,7 @@ body .btn a {
 /* line 4, ../scss/helpers/_header.scss */
 #header-wrapper {
   background-color: white;
-  background: url('/img/patterns/large/lightpaperfibers.png?1391539273');
+  background: url('/img/patterns/large/lightpaperfibers.png?1392149381');
 }
 /* line 8, ../scss/helpers/_header.scss */
 #header-wrapper .navbar {
@@ -292,7 +292,7 @@ body .btn a {
   border: 0;
   background-color: transparent;
   display: block;
-  background: transparent url('/img/../img/logo/logo-groupe.png?1391539273') no-repeat;
+  background: transparent url('/img/../img/logo/logo-groupe.png?1392149381') no-repeat;
   width: 200px;
   height: 75px;
 }
@@ -479,7 +479,7 @@ body .btn a {
     border: 0;
     background-color: transparent;
     display: block;
-    background: transparent url('/img/../img/logo/logo-groupe.medium.png?1391539273') no-repeat;
+    background: transparent url('/img/../img/logo/logo-groupe.medium.png?1392149381') no-repeat;
     width: 230px;
     height: 110px;
   }
@@ -748,11 +748,11 @@ body .btn a {
   padding: 30px 0px;
   text-align: center;
   border-bottom: 1px solid #0063a9;
-  background: url('/img/patterns/small/diagonal-noise.png?1391539273');
-  background: url('/img/patterns/small/fabric-plaid.png?1391539273');
-  background: url('/img/patterns/small/grid-noise.png?1391539273');
-  background: url('/img/patterns/small/pw-maze-white.png?1391539273');
-  background: url('/img/patterns/large/lightpaperfibers.png?1391539273');
+  background: url('/img/patterns/small/diagonal-noise.png?1392149381');
+  background: url('/img/patterns/small/fabric-plaid.png?1392149381');
+  background: url('/img/patterns/small/grid-noise.png?1392149381');
+  background: url('/img/patterns/small/pw-maze-white.png?1392149381');
+  background: url('/img/patterns/large/lightpaperfibers.png?1392149381');
 }
 /* line 14, ../scss/helpers/_intro.scss */
 #intro-wrapper .item {
@@ -953,7 +953,7 @@ body .btn a {
 /* line 2, ../scss/helpers/_benefit.scss */
 #benefits-wrapper {
   border-bottom: 1px solid #0063a9;
-  background: url('/img/patterns/large/lightpaperfibers.png?1391539273');
+  background: url('/img/patterns/large/lightpaperfibers.png?1392149381');
 }
 /* line 6, ../scss/helpers/_benefit.scss */
 #benefits-wrapper .feature-box {
@@ -3961,7 +3961,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 /* Extra small devices (phones, less than 768px) */
 /* line 2, ../scss/helpers/_blog.scss */
 #recent-wrapper {
-  background: url('/img/patterns/large/lightpaperfibers.png?1391539273');
+  background: url('/img/patterns/large/lightpaperfibers.png?1392149381');
 }
 
 /* Recent Posts */
@@ -4096,7 +4096,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 /* Extra small devices (phones, less than 768px) */
 /* line 2, ../scss/helpers/_googlemap.scss */
 div.google-map {
-  background: #E5E3DF;
+  background: #9a9a9a;
   height: 250px;
   margin: 0px 0 0px 0;
   width: 100%;
