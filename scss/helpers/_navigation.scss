@@ -139,7 +139,7 @@
             &.menuparent {
 
               > .nolink, > a {
-                background-image: url('../img/arrow-right-white.png');
+                background-image: url('../img/arrows/arrow-right-white.png');
                 background-size: 8px 11px;
               }
             }
@@ -184,13 +184,13 @@
               padding-top: 15px;
 
               &.menuparent {
-                background-image: url('../img/arrow-right-white.png');
+                background-image: url('../img/arrows/arrow-right-white.png');
                 background-position: 90%;
                 background-size: 8px 11px;
                 background-repeat: no-repeat;
 
                 &:hover {
-                  background-image: url('../img/arrow-right-white.png');
+                  background-image: url('../img/arrows/arrow-right-white.png');
                   background-size: 8px 11px;
                 }
               }

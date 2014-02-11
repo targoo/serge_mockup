@@ -22,7 +22,8 @@ $font-family-alternative: 'Shadows Into Light', cursive;
 
 @import 'helpers/mixins';
 
-//@import 'helpers/forms';
+///@import 'helpers/forms';
+
 @import 'helpers/elements';
 
 @import 'helpers/breadcrumb';
@@ -33,13 +34,48 @@ $font-family-alternative: 'Shadows Into Light', cursive;
 
 @import 'helpers/intro';
 
+@import 'helpers/calltoaction';
+
+@import 'helpers/benefit';
+
+@import 'helpers/highlight';
+
+@import 'helpers/animations';
+
+@import 'helpers/footer';
+
+@import 'helpers/blog';
+
+@import 'helpers/testimonial';
+
+@import 'helpers/googlemap';
+
+@import 'helpers/title';
+
+body {
+  &.nav-open {
+    #wrapper-outer {
+      overflow-x: hidden;
+      #wrapper {
+        left: 70%;
+      }
+    }
+  }
+}
+
+#wrapper-outer {
+  #wrapper {
+    position: relative;
+  }
+}
+
+
 //@import 'helpers/not_found';
 //@import 'helpers/slider';
 
 //@import 'helpers/carousel';
 //@import 'helpers/map';
 
-///@import 'helpers/footer';
 
 //@import 'helpers/agents';
 
@@ -47,7 +83,6 @@ $font-family-alternative: 'Shadows Into Light', cursive;
 
 ///@import 'helpers/calltoaction';
 
-///@import 'helpers/benefit';
 
 ///@import 'helpers/title';
 

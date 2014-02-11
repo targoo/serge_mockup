@@ -1,12 +1,13 @@
-/* Section Highlight */
-section.highlight {
+/* Extra small devices (phones, less than 768px) */
+#highlight-wrapper {
   background: $blue;
   boder-left: 0;
   boder-right: 0;
   border-top: 2px solid $blue-darker;
+  border-bottom: 1px solid $blue-light;
   padding: 40px 0;
 
-  div.counters strong {
+  .counters strong {
     display: block;
     font-weight: 600;
     font-size: 60px;
@@ -14,7 +15,7 @@ section.highlight {
     color: $white;
   }
 
-  div.counters label {
+  .counters label {
     display: block;
     font-weight: 100;
     font-size: 20px;
@@ -32,4 +33,19 @@ section.highlight {
     color: $white;
   }
 
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
 }

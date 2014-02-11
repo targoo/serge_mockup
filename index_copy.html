@@ -24,10 +24,6 @@
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
 
-  <link rel="stylesheet" href="libraries/chosen/chosen.css" type="text/css">
-  <link rel="stylesheet" href="libraries/bootstrap-fileupload/bootstrap-fileupload.css" type="text/css">
-  <link rel="stylesheet" href="libraries/jquery-ui-1.10.2.custom/css/ui-lightness/jquery-ui-1.10.2.custom.min.css" type="text/css">
-
   <!-- Theme CSS -->
   <link rel="stylesheet" href="css/main.css" type="text/css">
 
@@ -119,9 +115,8 @@
 </header>
 
 <!-- NAVIGATION -->
-<div id="navigation-wrapper">
+<nav id="navigation-wrapper">
   <div class="container">
-
     <div class="navigation">
       <ul class="nav">
         <li class="menuparent">
@@ -154,67 +149,69 @@
         <li><a href="contact-us.html">Contact</a></li>
       </ul>
     </div>
-
   </div>
-</div>
+</nav>
 
-<!-- CONTENT -->
-<div id="content">
-
-  <section class="intro-wrapper parallax" data-stellar-background-ratio="0.5">
-    <div class="container">
-      <div class="row">
-        <div class="item col-md-4">
-          <div class="personal decoration hidden-xs hidden-sm" data-appear-animation="bounceIn" data-appear-animation-delay="200"></div>
-          <h2>Particulier</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            accumsan dui ac nunc imperdiet rhoncus. Aenean vitae imperdiet
-            lectus</p>
-          <a href="assurance.html" class="btn btn-primary">Plus d'info</a>
-        </div>
-        <div class="item col-md-4">
-          <div class="profesionnal decoration hidden-xs hidden-sm" data-appear-animation="bounceIn" data-appear-animation-delay="400"></div>
-          <h2>Professionnel</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            accumsan dui ac nunc imperdiet rhoncus. Aenean vitae imperdiet
-            lectus</p>
-          <a href="assurance.html" class="btn btn-primary">Plus d'info</a>
-        </div>
-        <div class="item col-md-4">
-          <div class="enterprise decoration hidden-xs hidden-sm" data-appear-animation="bounceIn" data-appear-animation-delay="600"></div>
-          <h2>Entreprises</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            accumsan dui ac nunc imperdiet rhoncus. Aenean vitae imperdiet
-            lectus</p>
-          <a href="assurance.html" class="btn btn-primary">Plus d'info</a>
-        </div>
+<section id="intro-wrapper" class="parallax" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row">
+      <div class="item col-md-4">
+        <div class="personal decoration hidden-xs hidden-sm" data-appear-animation="bounceIn" data-appear-animation-delay="200"></div>
+        <h2>Particulier</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          accumsan dui ac nunc imperdiet rhoncus. Aenean vitae imperdiet
+          lectus</p>
+        <a href="assurance.html" class="btn btn-primary">Plus d'info</a>
+      </div>
+      <div class="item col-md-4">
+        <div class="profesionnal decoration hidden-xs hidden-sm" data-appear-animation="bounceIn" data-appear-animation-delay="400"></div>
+        <h2>Professionnel</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          accumsan dui ac nunc imperdiet rhoncus. Aenean vitae imperdiet
+          lectus</p>
+        <a href="assurance.html" class="btn btn-primary">Plus d'info</a>
+      </div>
+      <div class="item col-md-4">
+        <div class="enterprise decoration hidden-xs hidden-sm" data-appear-animation="bounceIn" data-appear-animation-delay="600"></div>
+        <h2>Entreprises</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          accumsan dui ac nunc imperdiet rhoncus. Aenean vitae imperdiet
+          lectus</p>
+        <a href="assurance.html" class="btn btn-primary">Plus d'info</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="call-to-action-wrapper hidden-xs">
-    <div class="container">
-      <div class="row">
-        <div class="center">
-          <h3>Que vous soyez particulier blabla <strong class="alternative-font">Serge Lamock</strong> vous apporte
-            <strong>conseil</strong>
-            <a href="contact-us.html" class="btn btn-lg btn-primary" data-appear-animation="bounceIn">Contactez nous!</a>
-            <span class="arrow hlb" data-appear-animation="rotateInUpLeft" style="top: -10px;"></span>
-          </h3>
-        </div>
+<!-- CALL TO ACTION -->
+<section class="call-to-action-wrapper hidden-xs">
+  <div class="container">
+    <div class="row">
+      <div class="center">
+        <h3>
+            <span class="word-rotate">
+              <span class="word-rotate-items">
+                <span>Particulier,</span>
+                <span>Professionnel,</span>
+                <span>Entreprise,</span>
+              </span>
+            </span>
+          <strong class="alternative-font"> Serge Lamock</strong> et son équipe vous conseil.
+          <a class="btn btn-primary btn-large arrow-right" href="contact-us.html" data-appear-animation="bounceIn">Contactez nous</a>
+          <span class="arrow hlb" data-appear-animation="rotateInUpLeft" style="top: -10px;"></span>
+        </h3>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-</div>
-
-<!-- BENEFIT -->
-<section class="benefits-wrapper">
+<!-- BENEFITS -->
+<section id="benefits-wrapper">
   <div class="container">
     <div class="col-md-12">
       <div class="row">
         <div class="col-md-4">
-          <div class="feature-box secundary">
+          <div class="feature-box first">
             <div class="feature-box-icon">
               <i class="icon icon-group"></i>
             </div>
@@ -226,7 +223,7 @@
                 rutrum pellentesque imperdiet.</p>
             </div>
           </div>
-          <div class="feature-box secundary">
+          <div class="feature-box">
             <div class="feature-box-icon">
               <i class="icon icon-file"></i>
             </div>
@@ -240,7 +237,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="feature-box secundary">
+          <div class="feature-box">
             <div class="feature-box-icon">
               <i class="icon icon-film"></i>
             </div>
@@ -252,7 +249,7 @@
                 iaculis nulla.</p>
             </div>
           </div>
-          <div class="feature-box secundary">
+          <div class="feature-box">
             <div class="feature-box-icon">
               <i class="icon icon-check"></i>
             </div>
@@ -266,7 +263,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="feature-box secundary">
+          <div class="feature-box">
             <div class="feature-box-icon">
               <i class="icon icon-bars"></i>
             </div>
@@ -278,7 +275,7 @@
                 iaculis nulla.</p>
             </div>
           </div>
-          <div class="feature-box secundary">
+          <div class="feature-box">
             <div class="feature-box-icon">
               <i class="icon icon-desktop"></i>
             </div>
@@ -296,7 +293,8 @@
   </div>
 </section>
 
-<section class="highlight hidden-xs">
+<!-- HIGHLIGHT -->
+<section id="highlight-wrapper" class="hidden-xs">
   <div class="container">
     <div class="row center counters">
       <div class="col-md-3">
@@ -319,118 +317,56 @@
   </div>
 </section>
 
-<section class="news-wrapper" data-stellar-background-ratio="0.5">
-
+<!-- NEWS -->
+<section id="news-wrapper" class="parallax" data-stellar-background-ratio="0.5">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
         <div class="recent-posts push-bottom">
           <h2 data-appear-animation="fadeInLeft">Notre <strong>Actualité</strong></h2>
           <div class="row">
-            <div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true}'>
-              <div>
-                <div class="col-md-6">
-                  <article>
-                    <div class="date">
-                      <span class="day">15</span>
-                      <span class="month">Jan</span>
-                    </div>
-                    <h4><a href="blog-post.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in
-                      consequat libero. <a href="/" class="read-more">read more <i
-                        class="icon icon-angle-right"></i></a></p>
-                  </article>
-                </div>
-                <div class="col-md-6">
-                  <article>
-                    <div class="date">
-                      <span class="day">17</span>
-                      <span class="month">Mar</span>
-                    </div>
-                    <h4><a href="blog-post.html">Lorem ipsum dolor</a></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in
-                      consequat. <a href="/" class="read-more">read more <i class="icon icon-angle-right"></i></a></p>
-                  </article>
-                </div>
-              </div>
-              <div>
-                <div class="col-md-6">
-                  <article>
-                    <div class="date">
-                      <span class="day">12</span>
-                      <span class="month">Jan</span>
-                    </div>
-                    <h4><a href="blog-post.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h4>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in
-                      consequat libero. <a href="/" class="read-more">read more <i
-                        class="icon icon-angle-right"></i></a></p>
-                  </article>
-                </div>
-                <div class="col-md-6">
-                  <article>
-                    <div class="date">
-                      <span class="day">11</span>
-                      <span class="month">Jan</span>
-                    </div>
-                    <h4><a href="blog-post.html">Lorem ipsum dolor</a></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="/" class="read-more">read more
-                      <i class="icon icon-angle-right"></i></a></p>
-                  </article>
-                </div>
-              </div>
-            </div>
+
+
+
+
+
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <h2 data-appear-animation="fadeInRight">Nos <strong>Clients</strong></h2>
         <div class="row">
-          <div class="owl-carousel push-bottom" data-plugin-options='{"items": 1, "autoHeight": true}'>
-            <div>
-              <div class="col-md-12">
-                <blockquote class="testimonial">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in
-                    consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in
-                    consequat. Donec hendrerit vehicula est, in consequat. Donec hendrerit vehicula est, in
-                    consequat.</p>
-                </blockquote>
-                <div class="testimonial-arrow-down"></div>
-                <div class="testimonial-author">
-                  <div class="img-thumbnail img-thumbnail-small">
-                    <img src="img/clients/client-1.jpg" alt="">
-                  </div>
-                  <p><strong>John Smith</strong><span>CEO & Founder - Crivos</span></p>
-                </div>
-              </div>
+
+
+          <div id="owl-example" class="owl-carousel">
+
+            <div class="item darkCyan">
+              <h3>Touch</h3>
+              <h4>Can touch this</h4>
             </div>
-            <div>
-              <div class="col-md-12">
-                <blockquote class="testimonial">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in
-                    consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </blockquote>
-                <div class="testimonial-arrow-down"></div>
-                <div class="testimonial-author">
-                  <div class="img-thumbnail img-thumbnail-small">
-                    <img src="img/clients/client-1.jpg" alt="">
-                  </div>
-                  <p><strong>David Calcus</strong><span>CEO & Founder - Mariquecalcus</span></p>
-                </div>
-              </div>
+            <div class="item forestGreen">
+              <h3>Grab</h3>
+              <h4>Can grab this</h4>
             </div>
+
           </div>
+
+
+
         </div>
       </div>
     </div>
   </div>
-
 </section>
+
+<!-- CONTENT -->
+<div id="content">
+</div>
 
 </div>
 
 <footer id="footer-wrapper">
-
   <div id="footer-top">
     <div class="container">
       <div class="row">
@@ -594,12 +530,9 @@
       </div>
     </div>
   </div>
-
 </footer>
 
 </div>
-
-<a class="scroll-to-top" href="#" id="scrollToTop"><i class="icon icon-chevron-up icon-white"></i></a>
 
 </div>
 
@@ -611,10 +544,6 @@
 
 <script src="js/vendor/owl-carousel/owl.carousel.js"></script>
 
-<script src="js/vendor/jflickrfeed/jflickrfeed.js"></script>
-
-<script src="js/vendor/magnific-popup/magnific-popup.js"></script>
-
 <script src="js/vendor/jquery.stellar.js"></script>
 
 <script src="js/vendor/jquery.validate.js"></script>
@@ -625,9 +554,6 @@
 <script src="js/theme.js"></script>
 
 <!-- Current Page Scripts -->
-
-<!-- Theme Initializer -->
-<script src="js/theme.js"></script>
 
 </body>
 </html>

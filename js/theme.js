@@ -42,6 +42,9 @@ Version: 		2.5
             // Scroll to Top Button.
             $.scrollToTop();
 
+            // Word Rotate
+            this.wordRotate();
+
             /*
             // Adds browser version on html class.
 			$.browserSelector();
@@ -288,7 +291,6 @@ Version: 		2.5
 			$("[data-appear-animation]").each(function() {
 
 				var $this = $(this);
-                console.log($this);
 
 				$this.addClass("appear-animation");
 

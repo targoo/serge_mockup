@@ -1,5 +1,4 @@
 /* Extra small devices (phones, less than 768px) */
-
 *,
 *:after,
 *:before {
@@ -73,45 +72,7 @@ body {
     @include buttonize($blue);
   }
 
-  #wrapper-outer { height: 100%;
-    #wrapper { @include transition(left .3s ease-in); display: table; height: 100%; position: relative; width: 100%;
-      #wrapper-inner { display: table-row; height: 100%; }
-      #footer-wrapper { display: table-row; height: 1px; }
-    }
-  }
 }
-
-@media(min-width: 980px) {
-  body {
-    padding-top: 0px;
-  }
-}
-
-@media (max-width: 979px) {
-  body {
-    &.nav-open {
-      #wrapper-outer { overflow-x: hidden;
-        #wrapper {  left: 70%; }
-      }
-    }
-  }
-}
-#content { padding-bottom: 30px; }
-
-@media (max-width: 767px) {
-  #content {
-    #main {
-      padding-left: 20px; padding-right: 20px;
-    }
-  }
-}
-
-@media (max-width: 767px) {
-  h1.page-header, h2.page-header { font-size: 24px; }
-  h2 { font-size: 24px; }
-}
-
-
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
