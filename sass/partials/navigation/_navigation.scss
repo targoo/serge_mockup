@@ -1,0 +1,270 @@
+/**
+ * @file
+ * Navigation.
+ */
+
+/* Extra small devices (phones, less than 768px) */
+#navigation-wrapper {
+  background-color: $blue;
+}
+
+.navigation {
+  height: 100%;
+  left: -70%;
+  width: 70%;
+  position: absolute;
+  top: 0;
+
+  // First level.
+  .nav {
+    display: block;
+    background-color: $blue;
+
+    li {
+      display: block;
+      text-align: right;
+
+      a {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 10px 30px;
+        @include unstyled-link();
+        color: $white;
+
+        &:hover {
+          color: $blue-light;
+          background-color: $blue;
+        }
+      }
+
+      span {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 10px 30px;
+        color: $white;
+      }
+
+      &:hover {
+        ul {
+          border-right: 2px solid $blue-light;
+        }
+      }
+
+      // Second level.
+      ul {
+        border-right: 2px solid $white;
+        left: auto ;
+        margin: 0px 15px 0px 0px ;
+        position: relative;
+        top: auto;
+        width: auto;
+
+        li {
+
+          .nolink, a {
+            font-size: 14px;
+          }
+
+          // Third level.
+          ul {
+            display: block;
+            left: auto;
+            margin: 0px 15px 0px 0px;
+            position: relative;
+            top: auto;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navigation {
+    height: 100%;
+    left: 0%;
+    position: static;
+    width: 100%;
+    line-height: 1;
+
+    .nav {
+      @include clearfix-normal;
+      display: block;
+      float: left;
+      list-style: none;
+
+      li {
+        background-color: transparent;
+        float: left;
+        position: relative;
+        clear: none;
+
+        .nolink, a {
+          @include transition(none);
+          background-color: transparent;
+          border-left: 0px;
+          border-top: 2px solid transparent;
+          color: $white;
+          display: block;
+          font-size: 16px;
+          font-weight: normal;
+          line-height: 1;
+          padding: 21px 20px 23px 20px;
+          white-space: nowrap;
+
+          &:hover {
+            background-color: $blue;
+            border-top: 2px solid $blue-light;
+            color: $white;
+            text-decoration: none;
+          }
+
+          &.active {
+            border-top: 2px solid $white;
+          }
+
+        }
+
+        &.menuparent {
+
+          > .nolink, > a {
+            background-image: url('../img/arrow-bottom-black.png');
+            background-position: 90% center;
+            background-repeat: no-repeat;
+            background-size: 11px 8px;
+            padding-right: 25px;
+          }
+
+          li {
+
+            &.menuparent {
+
+              > .nolink, > a {
+                background-image: url('../img/arrows/arrow-right-white.png');
+                background-size: 8px 11px;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          > ul {
+            visibility: visible;
+          }
+          > .nolink, > a {
+            background-color: $blue;
+            border-top: 2px solid $blue-light;
+            color: $white;
+            text-decoration: none;
+
+            &.menuparent {
+              background-image: url('../img/arrow-bottom-white.png');
+            }
+          }
+        }
+
+        ul {
+          @include background-image(none);
+          @include border-radius(0px);
+          background-color: $blue;
+          margin: 62px 0px 0px 0px;
+          position: absolute;
+          padding: 0px; top: 0px;
+          visibility: hidden;
+          width: 220px;
+          z-index: 999;
+          li { float: none; display: block; min-width: 100%;
+            .nolink, a {
+              @include transition(background-color .1s ease-in, padding-left .1s ease-in);
+              border-top: 0px !important;
+              color: $white !important;
+              display: block;
+              font-size: 14px;
+              padding-right: 20px;
+              padding-bottom: 15px;
+              padding-top: 15px;
+
+              &.menuparent {
+                background-image: url('../img/arrows/arrow-right-white.png');
+                background-position: 90%;
+                background-size: 8px 11px;
+                background-repeat: no-repeat;
+
+                &:hover {
+                  background-image: url('../img/arrows/arrow-right-white.png');
+                  background-size: 8px 11px;
+                }
+              }
+
+              &:hover {
+                background-color: $blue-dark;
+                padding-left: 25px;
+              }
+            }
+
+            ul {
+              left: 218px !important;
+              border-right: 0 none;
+              display: block;
+              margin: 0;
+              position: absolute;
+              top:0;
+              visibility: hidden;
+              width: 220px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navigation {
+
+    .nav {
+
+      li {
+
+        &.menuparent {
+
+          > .nolink, > a {
+            padding-right: 40px;
+          }
+
+        }
+
+      }
+    }
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navigation {
+
+    .nav {
+
+      li {
+
+        &.menuparent {
+
+          > .nolink, > a {
+            padding-right: 50px;
+          }
+
+        }
+
+      }
+    }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+}

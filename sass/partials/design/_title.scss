@@ -1,0 +1,49 @@
+/* Extra small devices (phones, less than 768px) */
+section.title {
+  background-color: $gray-lighter;
+  border-top: 1px solid $gray;
+  margin-bottom: 35px;
+  min-height: 50px;
+  padding: 0;
+  padding: 10px 0;
+  position: relative;
+  text-align: left;
+
+  h2 {
+    border-bottom: 2px solid $green;
+    color: $blue;
+    display: inline-block;
+    font-weight: 200;
+    margin: 0 0 -10px;
+    min-height: 37px;
+    line-height: 46px;
+    padding: 0 0 17px;
+    position: relative;
+  }
+
+  ul.breadcrumb {
+    background: none;
+    margin: -3px 0 0;
+    padding: 0;
+
+    > li {
+      text-shadow: none;
+
+      a {
+        color: $green;
+      }
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

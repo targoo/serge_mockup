@@ -1,0 +1,66 @@
+/* Extra small devices (phones, less than 768px) */
+#benefits-wrapper {
+  border-bottom: 1px solid $blue;
+  @include background(image-url("/img/patterns/large/lightpaperfibers.png"));
+
+  .feature-box {
+    padding: 5px 0;
+    clear: both;
+
+    &.first {
+      padding: 15px 0;
+    }
+
+    .feature-box-icon {
+      color: #FFF;
+      display: inline-block;
+      float: left;
+      height: 35px;
+      line-height: 50px;
+      margin-right: 10px;
+      position: relative;
+      text-align: center;
+      top: 5px;
+      width: 35px;
+
+      i.icon {
+        font-size: 28px;
+        color: $blue;
+      }
+    }
+
+    .feature-box-info {
+      padding-left: 60px;
+
+      h4 {
+        color: $blue;
+      }
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #benefits-wrapper {
+    border-bottom: 0px none;
+
+    .feature-box {
+      padding: 30px 0;
+
+      &.first {
+        padding: 30px 0;
+      }
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+}

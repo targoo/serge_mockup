@@ -1,0 +1,263 @@
+// https://github.com/AdamBrodzinski/Retina-Sprites-for-Compass/tree/release-2.0
+//@import "compass/utilities/sprites";
+// http://socicon.com/
+// https://github.com/AdamBrodzinski/Retina-Sprites-for-Compass/tree/release-2.0
+// http://www.midity.com/demosites/colornounproject/?id=441
+
+// @import "sprites/icons/*.png";
+
+// The first sprite is used as default,
+// so you don't have to pass the name to the `retina-sprite` mixin.
+@include retina-sprite-add(icons, "sprites/icons/*.png", "sprites-retina/icons/*.png");
+@include retina-sprite-add(buttons, "sprites/buttons/*.png", "sprites-retina/buttons/*.png");
+@include retina-sprite-add(socials, "sprites/socials/*.png", "sprites-retina/socials/*.png");
+
+/* Extra small devices (phones, less than 768px) */
+#footer-wrapper {
+  background-color: $blue-darker;
+  color: $blue-light;
+  width: 100%;
+
+  #footer-top {
+    background-color: $blue-dark;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    h2 {
+      color: $blue-light;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0px 0px 30px 0px;
+    }
+
+    .nav {
+
+      li {
+        background-image: url('../img/footer-border.png');
+        background-position: left bottom;
+        background-repeat: repeat-x;
+        background-size: 270px 1px;
+        color: $white;
+        list-style: disc;
+        list-style-position: inside;
+        padding: 6px 0px;
+
+        a {
+          color: $white;
+          display: inline-block;
+          line-height: 23px;
+
+          &:hover {
+            background-color: transparent;
+            color: $blue-light;
+            text-decoration: none;
+          }
+        }
+
+        &:first-child {
+          padding-top: 0px;
+        }
+
+        &:last-child {
+          background-image: none;
+        }
+      }
+    }
+
+    ul.opening {
+      padding:0;
+      margin:0;
+
+      li {
+        @include no-bullet();
+        color: $white;
+
+        label {
+          color: $blue;
+          font-weight: bold;
+          padding: 5px;
+          width: 70px;
+          text-align: right;
+          float: left;
+        }
+
+        div {
+          padding: 5px;
+        }
+      }
+    }
+
+    ul.contact {
+      padding:0;
+      margin:0;
+
+      li {
+        padding:0px 0px 10px 0px;
+        @include no-bullet();
+        color: $white;
+
+        i {
+          float:left;
+        }
+
+        a {
+          color: $white;
+        }
+
+        label {
+          color: $blue;
+          font-weight: bold;
+          padding: 5px;
+          width: 70px;
+          text-align: right;
+          float:left;
+        }
+
+        div {
+          padding: 5px;
+        }
+
+        &.address i {
+          @include retina-sprite(address, icons, $hover: false);
+        }
+
+        &.phone i {
+          @include retina-sprite(phone, icons, $hover: false);
+        }
+
+        &.email i {
+          @include retina-sprite(email, icons, $hover: false);
+        }
+
+        &.gps i {
+          @include retina-sprite(gps, icons, $hover: false);
+        }
+
+        &.fax i {
+          @include retina-sprite(fax, icons, $hover: false);
+        }
+
+        &.googlemap i {
+          @include retina-sprite(googlemap, icons, $hover: false);
+        }
+
+        &.googlemap {
+          a {
+            margin-left: 30px;
+          }
+        }
+
+      }
+
+    }
+  }
+
+  #footer {
+    border: 0px;
+    margin-top: 0px;
+    padding: 25px 0px;
+
+    #footer-inner {
+      p {
+        margin: 0px;
+
+        a {
+          text-decoration: none;
+        }
+      }
+
+      #block-menu-menu-share {
+        .content {
+          overflow: hidden;
+        }
+      }
+
+      .nav {
+        float: right;
+        margin: 0px;
+
+        li {
+          display: inline-block;
+          margin-left: 20px;
+
+          a {
+
+            height:20px;
+            width:20px;
+            @include hide-text();
+
+            &:hover {
+              background-color: $blue-darker;
+            }
+
+            &.facebook {
+              @include retina-sprite(facebook, socials, $hover: true);
+            }
+
+            &.twitter {
+              @include retina-sprite(twitter, socials, $hover: true);
+            }
+
+            &.flickr {
+              @include retina-sprite(flickr, socials, $hover: true);
+            }
+
+            &.vimeo {
+              @include retina-sprite(vimeo, socials, $hover: true);
+            }
+
+            &.google {
+              @include retina-sprite(google, socials, $hover: true);
+            }
+
+            &.linkedin {
+              @include retina-sprite(linkedin, socials, $hover: true);
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  #footer-wrapper {
+    #footer-top {
+      table.contact {
+        th { background-position: left center !important; display: block; padding-bottom: 12px; padding-left: 35px; padding-top: 12px; text-align: left; }
+        td { display: table; padding-bottom: 10px; }
+
+        tr {
+          &:first-child {
+            th { background-position: left top !important; padding-top: 0px; }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #footer-wrapper {
+    #footer-top {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    #footer {
+      #footer-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+        .nav {
+          float: none;
+          margin-top: 20px;
+          li {
+            &:first-child {
+              margin-left: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

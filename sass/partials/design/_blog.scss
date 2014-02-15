@@ -1,0 +1,63 @@
+/* Extra small devices (phones, less than 768px) */
+#recent-wrapper {
+  @include background(image-url("/img/patterns/large/lightpaperfibers.png"));
+}
+
+/* Recent Posts */
+.recent-posts {
+
+  article {
+    padding: 5px;
+    margin: 5px;
+
+    .date {
+      float: left;
+      margin: 10px 10px 0 0;
+      text-align: center;
+
+      span.month {
+        @include border-radius(0 0 2px 2px);
+        background: $blue;
+        color: $white;
+        font-size: 0.9em;
+        padding: 0 10px 2px;
+      }
+
+      span.day {
+        background: $blue-dark;
+        color: $white;
+        display: block;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 8px;
+      }
+    }
+
+    h4 {
+      margin-bottom: 7px;
+    }
+
+    p {
+      margin-bottom: 7px;
+    }
+
+  }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #recent-wrapper {
+    background-image: url(/img/background/background-interieur.jpg);
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

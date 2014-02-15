@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Layout elements.
+ */
+
+body {
+  &.nav-open {
+    #wrapper-outer {
+      overflow-x: hidden;
+      #wrapper {
+        left: 70%;
+      }
+    }
+  }
+}
+
+#wrapper-outer {
+  #wrapper {
+    position: relative;
+  }
+}

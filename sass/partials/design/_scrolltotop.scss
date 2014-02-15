@@ -1,0 +1,41 @@
+/* Extra small devices (phones, less than 768px) */
+// Scroll to Top.
+a.scroll-to-top{
+  @include transition(all 0.3s);
+  @include border-radius(8px 8px 0 0);
+  background: $gray;
+  bottom: 0px;
+  color: $white;
+  display: block;
+  height: 9px;
+  opacity: 0;
+  padding: 13px 0 35px;
+  position: fixed;
+  right: 30px;
+  text-align: center;
+  text-decoration: none;
+  width: 50px;
+  z-index: 10;
+
+  &.visible {
+    filter: alpha(opacity=75);
+    opacity: 0.75;
+  }
+
+  &:hover {
+    filter: alpha(opacity=100);
+    opacity: 1;
+    color: $blue;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+}

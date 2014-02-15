@@ -1,0 +1,89 @@
+/* Extra small devices (phones, less than 768px) */
+#intro-wrapper {
+  background-color: $white;
+  padding: 30px 0px;
+  text-align: center;
+  border-bottom: 1px solid $blue;
+
+  @include background(image-url("/img/patterns/small/diagonal-noise.png"));
+  @include background(image-url("/img/patterns/small/fabric-plaid.png"));
+  @include background(image-url("/img/patterns/small/grid-noise.png"));
+  @include background(image-url("/img/patterns/small/pw-maze-white.png"));
+  @include background(image-url("/img/patterns/large/lightpaperfibers.png"));
+
+  .item {
+    margin: 0px;
+    padding: 0px;
+
+    h2 {
+      font-size: 25px;
+    }
+
+    .decoration {
+      @include border-radius(50%);
+      @include transition(background-position .2s ease-in, border-color .2s ease-in, background-color .2s ease-in);
+      background-color: $gray-lighter;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      width: 180px;
+      height: 180px;
+    }
+
+    .personal {
+      background-image: url('../img/call-to-action/personal.png');
+    }
+
+    .profesionnal {
+      background-image: url('../img/call-to-action/profesionnal.png');
+    }
+
+    .enterprise {
+      background-image: url('../img/call-to-action/enterprise.png');
+    }
+
+    &:hover {
+      .enterprise, .profesionnal, .personal {
+        background-color: $blue;
+        background-position: center top;
+        border: 6px solid $blue-light;
+      }
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #intro-wrapper {
+    border-bottom: 0px none;
+    background-image: url(/img/background/background-facade.jpg);
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #intro-wrapper {
+
+    .decoration {
+      margin: 10px auto 20px auto;
+    }
+
+    .item {
+
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        margin: 0px 0px 30px 0px;
+      }
+
+    }
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+}

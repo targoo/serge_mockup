@@ -1,0 +1,164 @@
+@include retina-sprite-add(icons, "sprites/icons/*.png", "sprites-retina/icons/*.png");
+
+/* Extra small devices (phones, less than 768px) */
+#header-wrapper {
+  background-color: $white;
+  @include background(image-url("/img/patterns/large/lightpaperfibers.png"));
+
+  .navbar {
+    margin-bottom: 10px;
+
+    .navbar-inner {
+      filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+      @include background-image(none);
+      @include border-radius(0px);
+      @include box-shadow(none);
+      background-color: transparent;
+      border: 0px;
+      height: 80px;
+      padding: 0px;
+
+      .logo-wrapper {
+
+        #btn-nav {
+          float:left;
+          margin-top: 40px;
+          margin-right: 10px;
+          width: 35px;
+          height: 35px;
+          font-size: 30px;
+          color: $blue;
+        }
+
+        .logo {
+          float:left;
+          margin-top: 10px;
+
+          a {
+            @include image-replace('../img/logo/logo-groupe.png', block);
+          }
+        }
+
+        .site-slogan {
+          color: $gray-light;
+          margin-top: 30px;
+          margin-left: 15px;
+
+          div {
+            border-left: 2px solid $gray-light;
+            display: inline-block;
+            padding-left: 20px;
+            width: 150px;
+
+            span{
+            }
+
+            a {
+              @include unstyled-link;
+              @include border-radius(4px);
+              background-color: $gray-lighter;
+              color: $blue;
+              padding: 2px 5px;
+              margin: 5px 0;
+              display: block;
+
+              &:hover{
+                color: $black-darker
+              }
+            }
+          }
+        }
+      }
+
+      .info-wrapper {
+
+        ul.contact {
+
+          li {
+            @include no-bullet();
+            color: $gray;
+            font-size: 18px;
+            padding-bottom:20px;
+
+            label {
+              padding: 0px 5px;
+            }
+
+            a {
+              color: $gray;
+              @include unstyled-link;
+              cursor: pointer;
+            }
+
+            &.phone i {
+              @include retina-sprite(phoneg, icons, $hover: false);
+              float: left;
+            }
+
+            &.email i {
+              @include retina-sprite(emailg, icons, $hover: false);
+              float: left;
+            }
+          }
+        }
+      }
+
+      .extra-wrapper {
+        padding-top: 25px;
+
+        a {
+          @include buttonize($orange);
+          margin-top: 35px;
+        }
+      }
+
+    }
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #header-wrapper {
+
+    .navbar {
+
+      .navbar-inner {
+
+        .logo-wrapper {
+
+          #btn-nav {
+          }
+
+          .logo {
+            margin-top: 10px;
+            padding: 10px 30px 0px 0;
+
+            a {
+              @include image-replace('../img/logo/logo-groupe.medium.png', block);
+            }
+          }
+        }
+      }
+    }
+
+    .info-wrapper {
+
+      ul.contact {
+        padding:30px 0px 0px;
+
+        li {
+          font-size: 20px;
+          padding-bottom:10px;
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

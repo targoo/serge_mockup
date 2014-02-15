@@ -1,0 +1,96 @@
+/**
+ * @file
+ * Typography
+ */
+
+/* Extra small devices (phones, less than 768px) */
+*,
+*:after,
+*:before {
+  @include box-sizing(border-box);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: $gray-lighter;
+  color: $gray-dark;
+  font-family: $font-family-default;
+  font-size: 14px;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $blue-dark;
+  }
+
+  a {
+    @include transition(color .1s ease-in);
+    color: $blue;
+    &:hover {
+      color: darken($blue, 10%);
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    line-height: 20px;
+    &.content-icon-spacing { padding-left: 55px; }
+  }
+
+  hr {
+    &.dotted {
+      background-image: url('../img/border-gray.png');
+      background-position: left center;
+      background-repeat: no-repeat;
+      border: 0px;
+      height: 1px;
+    }
+  }
+
+  ul {
+    &.dotted {
+      li { color: $blue-dark; list-style-position: outside; list-style-type: disc; margin-left: 20px;
+        .inner { color: $black;
+          strong { color: $black-dark; }
+        }
+      }
+    }
+  }
+
+  // Responsive images.
+  img {
+    max-width: 100%;
+  }
+
+  // Alternative Font Style.
+  .alternative-font {
+    font-family: $font-family-alternative;
+  }
+
+  // Buttons.
+  .btn {
+    @include buttonize($blue);
+  }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+}
