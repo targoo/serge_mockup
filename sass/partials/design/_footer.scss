@@ -30,7 +30,9 @@
       margin: 0px 0px 30px 0px;
     }
 
-    .nav {
+    ul.nav {
+
+      margin-left: 0;
 
       li {
         background-image: url('../img/footer-border.png');
@@ -150,6 +152,15 @@
       }
 
     }
+
+  }
+
+  #legal {
+    background-color: $gray-light;
+    color: $gray-dark;
+    @include background(image-url("/img/patterns/large/lightpaperfibers.png"));
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   #footer {

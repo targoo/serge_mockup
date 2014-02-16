@@ -3286,8 +3286,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   font-weight: bold;
   margin: 0px 0px 30px 0px;
 }
-/* line 35, ../sass/partials/design/_footer.scss */
-#footer-wrapper #footer-top .nav li {
+/* line 33, ../sass/partials/design/_footer.scss */
+#footer-wrapper #footer-top ul.nav {
+  margin-left: 0;
+}
+/* line 37, ../sass/partials/design/_footer.scss */
+#footer-wrapper #footer-top ul.nav li {
   background-image: url("../img/footer-border.png");
   background-position: left bottom;
   background-repeat: repeat-x;
@@ -3297,39 +3301,39 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   list-style-position: inside;
   padding: 6px 0px;
 }
-/* line 45, ../sass/partials/design/_footer.scss */
-#footer-wrapper #footer-top .nav li a {
+/* line 47, ../sass/partials/design/_footer.scss */
+#footer-wrapper #footer-top ul.nav li a {
   color: white;
   display: inline-block;
   line-height: 23px;
 }
-/* line 50, ../sass/partials/design/_footer.scss */
-#footer-wrapper #footer-top .nav li a:hover {
+/* line 52, ../sass/partials/design/_footer.scss */
+#footer-wrapper #footer-top ul.nav li a:hover {
   background-color: transparent;
   color: #009ee0;
   text-decoration: none;
 }
-/* line 57, ../sass/partials/design/_footer.scss */
-#footer-wrapper #footer-top .nav li:first-child {
+/* line 59, ../sass/partials/design/_footer.scss */
+#footer-wrapper #footer-top ul.nav li:first-child {
   padding-top: 0px;
 }
-/* line 61, ../sass/partials/design/_footer.scss */
-#footer-wrapper #footer-top .nav li:last-child {
+/* line 63, ../sass/partials/design/_footer.scss */
+#footer-wrapper #footer-top ul.nav li:last-child {
   background-image: none;
 }
-/* line 67, ../sass/partials/design/_footer.scss */
+/* line 69, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.opening {
   padding: 0;
   margin: 0;
 }
-/* line 71, ../sass/partials/design/_footer.scss */
+/* line 73, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.opening li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
   color: white;
 }
-/* line 75, ../sass/partials/design/_footer.scss */
+/* line 77, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.opening li label {
   color: #0063a9;
   font-weight: bold;
@@ -3338,16 +3342,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-align: right;
   float: left;
 }
-/* line 84, ../sass/partials/design/_footer.scss */
+/* line 86, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.opening li div {
   padding: 5px;
 }
-/* line 90, ../sass/partials/design/_footer.scss */
+/* line 92, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.contact {
   padding: 0;
   margin: 0;
 }
-/* line 94, ../sass/partials/design/_footer.scss */
+/* line 96, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.contact li {
   padding: 0px 0px 10px 0px;
   list-style-image: none;
@@ -3355,15 +3359,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   margin-left: 0;
   color: white;
 }
-/* line 99, ../sass/partials/design/_footer.scss */
+/* line 101, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.contact li i {
   float: left;
 }
-/* line 103, ../sass/partials/design/_footer.scss */
+/* line 105, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.contact li a {
   color: white;
 }
-/* line 107, ../sass/partials/design/_footer.scss */
+/* line 109, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.contact li label {
   color: #0063a9;
   font-weight: bold;
@@ -3372,11 +3376,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-align: right;
   float: left;
 }
-/* line 116, ../sass/partials/design/_footer.scss */
+/* line 118, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.contact li div {
   padding: 5px;
 }
-/* line 120, ../sass/partials/design/_footer.scss */
+/* line 122, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.contact li.address i {
   display: inline-block;
   background-image: url('/img/sprites/icons-sb1854544ea.png');
@@ -3393,7 +3397,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    */
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 120, ../sass/partials/design/_footer.scss */
+  /* line 122, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer-top ul.contact li.address i {
     background-image: url('/img/sprites-retina/icons-s9ed4fcac31.png');
     -moz-background-size: 32px auto;
@@ -3403,7 +3407,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: 0 0;
   }
 }
-/* line 124, ../sass/partials/design/_footer.scss */
+/* line 126, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.contact li.phone i {
   display: inline-block;
   background-image: url('/img/sprites/icons-sb1854544ea.png');
@@ -3420,7 +3424,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    */
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 124, ../sass/partials/design/_footer.scss */
+  /* line 126, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer-top ul.contact li.phone i {
     background-image: url('/img/sprites-retina/icons-s9ed4fcac31.png');
     -moz-background-size: 32px auto;
@@ -3430,7 +3434,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: 0 -204px;
   }
 }
-/* line 128, ../sass/partials/design/_footer.scss */
+/* line 130, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.contact li.email i {
   display: inline-block;
   background-image: url('/img/sprites/icons-sb1854544ea.png');
@@ -3447,7 +3451,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    */
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 128, ../sass/partials/design/_footer.scss */
+  /* line 130, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer-top ul.contact li.email i {
     background-image: url('/img/sprites-retina/icons-s9ed4fcac31.png');
     -moz-background-size: 32px auto;
@@ -3457,7 +3461,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: 0 -34px;
   }
 }
-/* line 132, ../sass/partials/design/_footer.scss */
+/* line 134, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.contact li.gps i {
   display: inline-block;
   background-image: url('/img/sprites/icons-sb1854544ea.png');
@@ -3474,7 +3478,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    */
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 132, ../sass/partials/design/_footer.scss */
+  /* line 134, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer-top ul.contact li.gps i {
     background-image: url('/img/sprites-retina/icons-s9ed4fcac31.png');
     -moz-background-size: 32px auto;
@@ -3484,7 +3488,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: 0 -170px;
   }
 }
-/* line 136, ../sass/partials/design/_footer.scss */
+/* line 138, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.contact li.fax i {
   display: inline-block;
   background-image: url('/img/sprites/icons-sb1854544ea.png');
@@ -3501,7 +3505,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    */
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 136, ../sass/partials/design/_footer.scss */
+  /* line 138, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer-top ul.contact li.fax i {
     background-image: url('/img/sprites-retina/icons-s9ed4fcac31.png');
     -moz-background-size: 32px auto;
@@ -3511,7 +3515,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: 0 -102px;
   }
 }
-/* line 140, ../sass/partials/design/_footer.scss */
+/* line 142, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.contact li.googlemap i {
   display: inline-block;
   background-image: url('/img/sprites/icons-sb1854544ea.png');
@@ -3528,7 +3532,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
    */
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 140, ../sass/partials/design/_footer.scss */
+  /* line 142, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer-top ul.contact li.googlemap i {
     background-image: url('/img/sprites-retina/icons-s9ed4fcac31.png');
     -moz-background-size: 32px auto;
@@ -3538,39 +3542,47 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: 0 -136px;
   }
 }
-/* line 145, ../sass/partials/design/_footer.scss */
+/* line 147, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer-top ul.contact li.googlemap a {
   margin-left: 30px;
 }
-/* line 155, ../sass/partials/design/_footer.scss */
+/* line 158, ../sass/partials/design/_footer.scss */
+#footer-wrapper #legal {
+  background-color: #b5b5b5;
+  color: #5d5d5d;
+  background: url('/img/patterns/large/lightpaperfibers.png?1392149381');
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* line 166, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer {
   border: 0px;
   margin-top: 0px;
   padding: 25px 0px;
 }
-/* line 161, ../sass/partials/design/_footer.scss */
+/* line 172, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer #footer-inner p {
   margin: 0px;
 }
-/* line 164, ../sass/partials/design/_footer.scss */
+/* line 175, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer #footer-inner p a {
   text-decoration: none;
 }
-/* line 170, ../sass/partials/design/_footer.scss */
+/* line 181, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer #footer-inner #block-menu-menu-share .content {
   overflow: hidden;
 }
-/* line 175, ../sass/partials/design/_footer.scss */
+/* line 186, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav {
   float: right;
   margin: 0px;
 }
-/* line 179, ../sass/partials/design/_footer.scss */
+/* line 190, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li {
   display: inline-block;
   margin-left: 20px;
 }
-/* line 183, ../sass/partials/design/_footer.scss */
+/* line 194, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a {
   height: 20px;
   width: 20px;
@@ -3579,11 +3591,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-align: left;
   text-transform: capitalize;
 }
-/* line 189, ../sass/partials/design/_footer.scss */
+/* line 200, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a:hover {
   background-color: #02293a;
 }
-/* line 193, ../sass/partials/design/_footer.scss */
+/* line 204, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a.facebook {
   display: inline-block;
   background-image: url('/img/sprites/socials-sa53d0bfb71.png');
@@ -3604,7 +3616,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-position: 0 -1054px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 193, ../sass/partials/design/_footer.scss */
+  /* line 204, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav li a.facebook {
     background-image: url('/img/sprites-retina/socials-s8f9a60284a.png');
     -moz-background-size: 32px auto;
@@ -3618,7 +3630,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: 0 -1054px;
   }
 }
-/* line 197, ../sass/partials/design/_footer.scss */
+/* line 208, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a.twitter {
   display: inline-block;
   background-image: url('/img/sprites/socials-sa53d0bfb71.png');
@@ -3639,7 +3651,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-position: 0 -3230px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 197, ../sass/partials/design/_footer.scss */
+  /* line 208, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav li a.twitter {
     background-image: url('/img/sprites-retina/socials-s8f9a60284a.png');
     -moz-background-size: 32px auto;
@@ -3653,7 +3665,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: 0 -3230px;
   }
 }
-/* line 201, ../sass/partials/design/_footer.scss */
+/* line 212, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a.flickr {
   display: inline-block;
   background-image: url('/img/sprites/socials-sa53d0bfb71.png');
@@ -3674,7 +3686,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-position: 0 -1258px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 201, ../sass/partials/design/_footer.scss */
+  /* line 212, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav li a.flickr {
     background-image: url('/img/sprites-retina/socials-s8f9a60284a.png');
     -moz-background-size: 32px auto;
@@ -3688,7 +3700,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: 0 -1258px;
   }
 }
-/* line 205, ../sass/partials/design/_footer.scss */
+/* line 216, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a.vimeo {
   display: inline-block;
   background-image: url('/img/sprites/socials-sa53d0bfb71.png');
@@ -3709,7 +3721,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-position: 0 -3366px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 205, ../sass/partials/design/_footer.scss */
+  /* line 216, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav li a.vimeo {
     background-image: url('/img/sprites-retina/socials-s8f9a60284a.png');
     -moz-background-size: 32px auto;
@@ -3723,7 +3735,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: 0 -3366px;
   }
 }
-/* line 209, ../sass/partials/design/_footer.scss */
+/* line 220, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a.google {
   display: inline-block;
   background-image: url('/img/sprites/socials-sa53d0bfb71.png');
@@ -3744,7 +3756,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-position: 0 -1598px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 209, ../sass/partials/design/_footer.scss */
+  /* line 220, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav li a.google {
     background-image: url('/img/sprites-retina/socials-s8f9a60284a.png');
     -moz-background-size: 32px auto;
@@ -3758,7 +3770,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background-position: 0 -1598px;
   }
 }
-/* line 213, ../sass/partials/design/_footer.scss */
+/* line 224, ../sass/partials/design/_footer.scss */
 #footer-wrapper #footer #footer-inner .nav li a.linkedin {
   display: inline-block;
   background-image: url('/img/sprites/socials-sa53d0bfb71.png');
@@ -3779,7 +3791,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-position: 0 -2006px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  /* line 213, ../sass/partials/design/_footer.scss */
+  /* line 224, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav li a.linkedin {
     background-image: url('/img/sprites-retina/socials-s8f9a60284a.png');
     -moz-background-size: 32px auto;
@@ -3795,7 +3807,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  /* line 228, ../sass/partials/design/_footer.scss */
+  /* line 239, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer-top table.contact th {
     background-position: left center !important;
     display: block;
@@ -3804,34 +3816,34 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     padding-top: 12px;
     text-align: left;
   }
-  /* line 229, ../sass/partials/design/_footer.scss */
+  /* line 240, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer-top table.contact td {
     display: table;
     padding-bottom: 10px;
   }
-  /* line 233, ../sass/partials/design/_footer.scss */
+  /* line 244, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer-top table.contact tr:first-child th {
     background-position: left top !important;
     padding-top: 0px;
   }
 }
 @media (max-width: 767px) {
-  /* line 243, ../sass/partials/design/_footer.scss */
+  /* line 254, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer-top {
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 248, ../sass/partials/design/_footer.scss */
+  /* line 259, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer #footer-inner {
     padding-left: 20px;
     padding-right: 20px;
   }
-  /* line 251, ../sass/partials/design/_footer.scss */
+  /* line 262, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav {
     float: none;
     margin-top: 20px;
   }
-  /* line 255, ../sass/partials/design/_footer.scss */
+  /* line 266, ../sass/partials/design/_footer.scss */
   #footer-wrapper #footer #footer-inner .nav li:first-child {
     margin-left: 0px;
   }

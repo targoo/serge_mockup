@@ -23,13 +23,11 @@
   <!-- Libs CSS -->
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
-
-  <link rel="stylesheet" href="libraries/chosen/chosen.css" type="text/css">
-  <link rel="stylesheet" href="libraries/bootstrap-fileupload/bootstrap-fileupload.css" type="text/css">
-  <link rel="stylesheet" href="libraries/jquery-ui-1.10.2.custom/css/ui-lightness/jquery-ui-1.10.2.custom.min.css" type="text/css">
+  <link rel="stylesheet" href="js/vendor/owl-carousel/owl.carousel.css" media="screen">
+  <link rel="stylesheet" href="js/vendor/owl-carousel/owl.theme.css" media="screen">
 
   <!-- Theme CSS -->
-  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 
   <!-- Head Libs -->
   <script src="js/vendor/modernizr.js"></script>
@@ -48,146 +46,169 @@
 
 <div id="wrapper-inner">
 
-  <!-- BREADCRUMB -->
-  <div class="breadcrumb-wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="breadcrumb pull-left">
-            <li><a href="index.html">Home</a></li>
+<!-- BREADCRUMB -->
+<div class="breadcrumb-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="breadcrumb pull-left">
+          <li><a href="/">Home</a></li>
+        </ul>
+        <div class="user pull-right">
+          <ul class="nav nav-pills">
+            <li><a href="/user">Login</a></li>
           </ul>
-          <div class="user pull-right">
-            <ul class="nav nav-pills">
-              <li><a href="login.html">Login</a></li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <!-- HEADER -->
-  <header id="header-wrapper">
-    <div class="container">
-      <div class="navbar">
-        <div class="navbar-inner">
-          <div class="row">
+<!-- HEADER -->
+<header id="header-wrapper">
+  <div class="container">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="row">
 
-            <div class="logo-wrapper col-sm-5 col-xs-12">
+          <div class="logo-wrapper col-sm-5 col-xs-12">
 
-              <a href="#" class="visible-xs" id="btn-nav"><i class="icon icon-bars"></i></a>
+            <a href="#" class="visible-xs" id="btn-nav"><i class="icon icon-bars"></i></a>
 
-              <div class="logo">
-                <a href="index.html" title="Home">
-                </a>
+            <div class="logo">
+              <a href="/" title="Home"></a>
+            </div>
+
+            <div class="site-slogan visible-lg">
+              <div>
+                <span>Bureaux Conseils</span>
+                <span>Lamock SPRL</span>
+                <a href="contact-us.html"><i class="icon icon-angle-right"></i> Contactez-nous</a>
+                <a href="contact-us.html"><i class="icon icon-angle-right"></i> Votre équipe</a>
               </div>
-
-              <div class="site-slogan visible-lg">
-                <span>Bureaux Conseils <br>Lamock sprl</span>
-              </div>
             </div>
-
-            <div class="info-wrapper col-sm-5 col-xs-12 hidden-xs">
-              <ul class="contact">
-                <li class="phone">
-                  <i></i>
-                  <label>
-                    (+32) 061 534462
-                  </label>
-                </li>
-                <li class="email">
-                  <i></i>
-                  <label>
-                    <a href="mailto:info@bureaux-lamock.be">info@bureaux-lamock.be</a>
-                  </label>
-                </li>
-              </ul>
-            </div>
-
-            <div class="extra-wrapper col-sm-2 hidden-xs">
-              <a class="btn btn-primary btn-large arrow-right"
-                 href="assurance.html">Assurance</a>
-            </div>
-
           </div>
+
+          <div class="info-wrapper col-sm-5 col-xs-12 hidden-xs">
+            <ul class="contact">
+              <li class="phone">
+                <i></i>
+                <label>
+                  (+32) 061 534462
+                </label>
+              </li>
+              <li class="email">
+                <i></i>
+                <label>
+                  <a href="mailto:info@bureaux-lamock.be">info@bureaux-lamock.be</a>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="extra-wrapper col-sm-2 hidden-xs">
+            <a class="btn btn-primary btn-large arrow-right" href="assurance.html">Assurance</a>
+          </div>
+
         </div>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <!-- NAVIGATION -->
-  <nav id="navigation-wrapper">
-    <div class="container">
-      <div class="navigation">
-        <ul class="nav">
-          <li class="menuparent">
-            <span class="menuparent nolink">Société</span>
-            <ul>
-              <li><a href="personnel.html">Votre équipe</a></li>
-              <li class="menuparent">
-                <a href="styleguide.html">Historique</a>
-                <ul>
-                  <li><a href="styleguide.html">Styles</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="menuparent">
-            <a href="simple.html">Particulier</a>
-            <ul>
-              <li><a href="simple.html">Simple</a></li>
-            </ul>
-          </li>
-          <li class="menuparent">
-            <span class="menuparent nolink">Professionel</span>
-          </li>
-          <li class="menuparent">
-            <span class="menuparent nolink">Entreprise</span>
-          </li>
-          <li class="menuparent">
-            <a href="assurance.html">Particulier</a>
-          </li>
-          <li><a href="contact-us.html">Contact</a></li>
+<!-- NAVIGATION -->
+<nav id="navigation-wrapper">
+  <div class="container">
+    <div class="navigation">
+      <ul class="nav">
+        <li class="menuparent">
+          <span class="menuparent nolink">Société</span>
+          <ul>
+            <li><a href="personnel.html">Votre équipe</a></li>
+            <li class="menuparent">
+              <a href="styleguide.html">Historique</a>
+              <ul>
+                <li><a href="styleguide.html">Styles</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="menuparent">
+          <a href="simple.html">Particulier</a>
+          <ul>
+            <li><a href="simple.html">Simple</a></li>
+          </ul>
+        </li>
+        <li class="menuparent">
+          <span class="menuparent nolink">Professionel</span>
+        </li>
+        <li class="menuparent">
+          <span class="menuparent nolink">Entreprise</span>
+        </li>
+        <li class="menuparent">
+          <a href="assurance.html">Particulier</a>
+        </li>
+        <li><a href="contact-us.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- BANNER -->
+<div id="banner" class="banner hidden-xs"></div>
+
+<!-- TITLE -->
+<section class="title">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="active">Simple</li>
         </ul>
       </div>
     </div>
-  </nav>
-
-  <!-- BANNER -->
-  <div id="banner" class="banner hidden-xs"></div>
-
-  <!-- TITLE -->
-  <section class="title">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <ul class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li class="active">Simple</li>
-          </ul>
-        </div>
+    <div class="row">
+      <div class="col-md-10">
+        <h1>Simple</h1>
       </div>
-      <div class="row">
-        <div class="col-md-10">
-          <h1>Simple</h1>
-        </div>
-        <div class="col-md-2">
-        </div>
+      <div class="col-md-2">
       </div>
-    </div>
-  </section>
-
-  <!-- CONTENT -->
-  <div id="content">
-    <div class="container">
-      <p>lorem ipsum</p>
     </div>
   </div>
+</section>
 
-
+<!-- CONTENT -->
+<div class="body">
+  <div role="main" class="main">
+    <div id="content" class="content full">
+      TTTT
+    </div>
+  </div>
 </div>
 
+</div><!--div id="wrapper-inner"-->
+
 <footer id="footer-wrapper">
+
+  <div id="legal">
+    <div class="container">
+      <div class="row">
+        <div class="widget col-sm-6">
+          Directeur d'agence Indépendant n° FSMA 111613cA-cB<br/>
+          N° entreprise 0833.282.359<br/>
+          Courtier en assurances enregistré sous le n° FSMA 010181 A<br/>
+          N° entreprise 0419.641.497<br/>
+        </div>
+        <div class="widget col-sm-3">
+          <img src="/img/legal/ing.png">
+        </div>
+        <div class="widget col-sm-3">
+          <img src="/img/legal/courtier.png">
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div id="footer-top">
     <div class="container">
@@ -210,14 +231,14 @@
                 <i class="phone"></i>
                 <label>Tél:</label>
                 <div>
-                (+32) 061 534462
+                  (+32) 061 534462
                 </div>
               </li>
               <li class="fax">
                 <i class="fax"></i>
                 <label>Fax:</label>
                 <div>
-                (+32) 061 534961
+                  (+32) 061 534961
                 </div>
               </li>
               <li class="email">
@@ -231,8 +252,8 @@
                 <i class="gps"></i>
                 <label>GPS:</label>
                 <div>
-                N 49° 54’ 13.824’’<br/>
-                E 5° 8’ 9.197’’
+                  N 49° 54’ 13.824’’<br/>
+                  E 5° 8’ 9.197’’
                 </div>
               </li>
               <li class="googlemap">
@@ -253,37 +274,42 @@
             <ul class="opening">
               <li>
                 <label>Lundi:</label>
+
                 <div>
-                08h45 à 12h30<br/>
-                14h00 à 16h30
+                  08h45 à 12h30<br/>
+                  14h00 à 16h30
                 </div>
               </li>
               <li>
                 <label>Mardi:</label>
+
                 <div>
-                08h45 à 12h30<br/>
-                14h00 à 16h30
+                  08h45 à 12h30<br/>
+                  14h00 à 16h30
                 </div>
               </li>
               <li>
                 <label>Mercredi:</label>
+
                 <div>
-                08h45 à 12h30<br/>
-                après-midi sur rendez-vous
+                  08h45 à 12h30<br/>
+                  après-midi sur rendez-vous
                 </div>
               </li>
               <li>
                 <label>Jeudi:</label>
+
                 <div>
-                08h45 à 12h30<br/>
-                14h00 à 16h30
+                  08h45 à 12h30<br/>
+                  14h00 à 16h30
                 </div>
               </li>
               <li>
                 <label>Vendredi:</label>
+
                 <div>
-                08h45 à 12h30<br/>
-                14h00 à 16h30
+                  08h45 à 12h30<br/>
+                  14h00 à 16h30
                 </div>
               </li>
               <li>
@@ -318,8 +344,6 @@
           <p>Copyright 2013 by <a
             href="http://www.mariqueCalcus">MariqueCalcus</a>. All rights
             reserved.</p>
-          Courtier en assurances enregistré sous le n° FSMA 010181 A<br/>
-          N° entreprise 0419.641.497<br/>
         </div>
         <div class="col-sm-6 social">
           <div class="content">
@@ -345,11 +369,9 @@
 
 </footer>
 
-</div>
+</div><!--div id="wrapper"-->
 
-<a class="scroll-to-top" href="#" id="scrollToTop"><i class="icon icon-chevron-up icon-white"></i></a>
-
-</div>
+</div><!--div id="wrapper-outer"-->
 
 <!-- Libs -->
 <script src="js/jquery.js"></script>
@@ -359,10 +381,6 @@
 
 <script src="js/vendor/owl-carousel/owl.carousel.js"></script>
 
-<script src="js/vendor/jflickrfeed/jflickrfeed.js"></script>
-
-<script src="js/vendor/magnific-popup/magnific-popup.js"></script>
-
 <script src="js/vendor/jquery.stellar.js"></script>
 
 <script src="js/vendor/jquery.validate.js"></script>
@@ -371,8 +389,6 @@
 
 <!-- Theme Initializer -->
 <script src="js/theme.js"></script>
-
-<!-- Current Page Scripts -->
 
 </body>
 </html>
