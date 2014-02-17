@@ -116,6 +116,35 @@
   }
 }
 
+// Banque.
+.banque {
+
+  .extra-wrapper {
+    a {
+      background-color: $green!important;
+    }
+  }
+
+  .logo-wrapper {
+    .logo {
+      a {
+        background-image: url('/img/../img/logo/logo-banque.png')!important;
+      }
+    }
+  }
+}
+
+// Assurance.
+.assurance {
+  .logo-wrapper {
+    .logo {
+      a {
+        background-image: url('/img/../img/logo/logo-assurance.png')!important;
+      }
+    }
+  }
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #header-wrapper {
@@ -149,6 +178,28 @@
         li {
           font-size: 20px;
           padding-bottom:10px;
+        }
+      }
+    }
+  }
+
+  // Banque.
+  .banque {
+    .logo-wrapper {
+      .logo {
+        a {
+          background-image: url('../img/logo/logo-banque.medium.png')!important;
+        }
+      }
+    }
+  }
+
+  // Assurance.
+  .assurance {
+    .logo-wrapper {
+      .logo {
+        a {
+          background-image: url('../img/logo/logo-assurance.medium.png')!important;
         }
       }
     }

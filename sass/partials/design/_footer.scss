@@ -201,6 +201,7 @@
               background-color: $blue-darker;
             }
 
+            // http://socicon.com/
             &.facebook {
               @include retina-sprite(facebook, socials, $hover: true);
             }
